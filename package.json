@@ -1,0 +1,22 @@
+{
+  "name": "fundays",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "vite-dev": "vite",
+    "vite-watch": "vite build --watch",
+
+    "vite-preview": "vite preview",
+    
+    "php": "php -S localhost:8000",
+    "dev": "run-p vite-watch php",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "glob": "^11.0.0"
+  }
+}
