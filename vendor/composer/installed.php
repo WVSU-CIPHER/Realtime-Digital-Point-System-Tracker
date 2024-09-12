@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => '__root__',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'ee19317ce84e78715872c3c608a37ae40c5ba244',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'ee19317ce84e78715872c3c608a37ae40c5ba244',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'bramus/router' => array(
+            'pretty_version' => '1.6.1',
+            'version' => '1.6.1.0',
+            'reference' => '55657b76da8a0a509250fb55b9dd24e1aa237eba',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../bramus/router',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'dallgoot/yaml' => array(
+            'pretty_version' => '0.9.1.2',
+            'version' => '0.9.1.2',
+            'reference' => '99385863e0ffec5639f24844b616afe7cce6e14c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../dallgoot/yaml',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

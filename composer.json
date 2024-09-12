@@ -1,0 +1,6 @@
+{
+    "require": {
+        "dallgoot/yaml": "^0.9.1",
+        "bramus/router": "^1.6"
+    }
+}
