@@ -7,7 +7,7 @@
     "php": "php -S localhost:8000",
     "vite-dev": "vite --open",
     "vite-build": "vite build --watch",
-    "browser-sync": "browser-sync start --proxy localhost:8000 --files dist",
+    "browser-sync": "browser-sync start --proxy 'http://localhost:8000' --files 'dist' --no-inject-changes",
 
     "dev": "run-p php vite-build browser-sync"
   },
