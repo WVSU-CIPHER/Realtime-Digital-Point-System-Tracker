@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Oxanium";
-  src: url("../public/fonts/Oxanium/Oxanium-VariableFont_wght.ttf")
+  src: url("../fonts/Oxanium/Oxanium-VariableFont_wght.ttf")
     format("truetype");
 }
 body {
