@@ -4,16 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "vite-dev": "vite",
-    "vite-watch": "vite build --watch",
+    "php": "php -S localhost:8000",
+    "vite-dev": "vite --open",
+    "vite-build": "vite build --watch",
+    "browser-sync": "browser-sync start --proxy localhost:8000 --files dist",
 
-    "vite-preview": "vite preview",
-    
-    "local-php": "php -S localhost:8000",
-    "local-browser": "browser-sync start --proxy \"localhost:8000\" --files \"dist\"",
-    "build": "vite build",
-
-    "dev": "run-p vite-watch local-php local-browser"
+    "dev": "run-p php vite-build browser-sync"
   },
   "devDependencies": {
     "vite": "^5.4.1"
