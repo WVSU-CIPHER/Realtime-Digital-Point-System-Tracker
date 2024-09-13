@@ -9,9 +9,11 @@
 
     "vite-preview": "vite preview",
     
-    "php": "php -S localhost:8000",
-    "dev": "run-p vite-watch php",
-    "build": "vite build"
+    "local-php": "php -S localhost:8000",
+    "local-browser": "browser-sync start --proxy \"localhost:8000\" --files \"dist\"",
+    "build": "vite build",
+
+    "dev": "run-p vite-watch local-php local-browser"
   },
   "devDependencies": {
     "vite": "^5.4.1"

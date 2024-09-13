@@ -7,6 +7,16 @@ namespace Composer\Autoload;
 class ComposerStaticInit5d20f80f762b0e97920c8930b45c3cc2
 {
     public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'Psr\\Http\\Message\\' => 17,
+        ),
+        'G' => 
+        array (
+            'Gt\\PropFunc\\' => 12,
+            'Gt\\Dom\\' => 7,
+            'Gt\\CssXPath\\' => 12,
+        ),
         'D' => 
         array (
             'Dallgoot\\Yaml\\' => 14,
@@ -14,6 +24,22 @@ class ComposerStaticInit5d20f80f762b0e97920c8930b45c3cc2
     );
 
     public static $prefixDirsPsr4 = array (
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Gt\\PropFunc\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpgt/propfunc/src',
+        ),
+        'Gt\\Dom\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpgt/dom/src',
+        ),
+        'Gt\\CssXPath\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpgt/cssxpath/src',
+        ),
         'Dallgoot\\Yaml\\' => 
         array (
             0 => __DIR__ . '/..' . '/dallgoot/yaml/src',
