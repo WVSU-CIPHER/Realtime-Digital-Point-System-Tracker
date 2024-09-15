@@ -1,8 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: var(--text-color);
+@font-face {
+  font-family: "Oxanium";
+  src: url("../fonts/Oxanium/Oxanium-VariableFont_wght.ttf") format("truetype");
 }
 
 :root {
@@ -11,9 +9,17 @@
   --bg-color: #050402;
 }
 
-@font-face {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
   font-family: "Oxanium";
-  src: url("../fonts/Oxanium/Oxanium-VariableFont_wght.ttf") format("truetype");
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
@@ -33,54 +39,35 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  height: 74px;
+  max-height: 74px;
   width: 100%;
+  padding: 10px 7.5rem 0;
   background-color: var(--bg-color);
 }
 
 .logo {
   display: flex;
   flex-direction: row;
-  font-family: "Oxanium";
-  font: weight 800px;
-  font-size: 32px;
-  padding-top: 10px;
-  padding-left: 128px;
+  font-weight: 800;
+  font-size: 2rem;
   gap: 8px;
+  align-items: center;
 }
 
-.heading {
+.heading,
+.navbar-link--active {
   color: var(--highlight-color);
 }
 
 .sub-heading {
-  padding-top: 18px;
-  color: var(--text-color);
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .navbar-link {
   display: flex;
-  padding-top: 28px;
-  gap: 64px;
-  font-family: "Oxanium";
-  font-size: 18px;
+  align-items: center;
+  gap: 4rem;
+  font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
-  padding-right: 128px;
-}
-
-.navbar-link-home {
-  text-decoration: none;
-  color: var(--highlight-color);
-}
-
-.navbar-link-competition {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-.navbar-link-curricula {
-  color: var(--text-color);
-  text-decoration: none;
 }
