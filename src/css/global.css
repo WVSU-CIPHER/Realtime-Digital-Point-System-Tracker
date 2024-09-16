@@ -45,7 +45,6 @@ body {
   max-height: 74px;
   width: 100%;
   padding: 10px 10% 0;
-  background-color: var(--bg-color);
 }
 
 .logo {
