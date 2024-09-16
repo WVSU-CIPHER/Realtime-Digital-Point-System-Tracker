@@ -1,88 +1,129 @@
-@font-face {
-    font-family: "Oxanium";
-    src: url("../fonts/Oxanium/Oxanium-VariableFont_wght.ttf") format("truetype");
-  }
+:root {
+    --dark-surface: #050402;
+    --event-bg-color: #ff9422;
+    --mobile-bg-for-glass: rgba(96, 75, 75, 0.22);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F48128;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #f48028a5;
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* for vertical scrollbars */
+    height: 0px;
+}
 
 .main__subheading{
-    color: #FFF;
-
-/* Duhina's Styles/h2 */
-    font-family: Oxanium;
-    font-size: 32px;
-    font-style: normal;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 130%; /* 41.6px */
     margin-bottom: 14px;
 }
 
 main {
-    padding: 160px 120px 0  ;
-
+    padding: 3.75rem 10% 0;
+    width: 100%;
 }
 
 .main__event-status  a{
     text-decoration: none;
     padding: 10px;
     line-height: 150%; /* 27px */
-    font-family: Oxanium;
-    font-size: 18px;
-    font-style: normal;
+    font-size: 1.125rem;
     font-weight: 700;
     text-align: center;
 }
 
 .main__active{
-    color: var(--dark-surface, #050402);
-    background-color: #ff9422;
+    color: var(--dark-surface);
+    background-color: var(--event-bg-color);
     border-radius: 5px;
 }
 
 .main__container-events{
-    border-top: 2px #ff9422 solid;
-    margin-top: 15px;
-    padding-top: 40px;
-    display: flex;
-    flex-direction: row;
+    max-height: 350px;
+    overflow-y: scroll;
+    border-top: 2px var(--event-bg-color) solid;
+    border-bottom: 2px var(--event-bg-color) solid;
+    margin-top: 16px;
+    padding: 2.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.875rem;
+    column-gap: 6.25rem;
+    justify-content: space-between;
 }
 
 .main__event-container--completed{
     align-items: center;
-    width: 550px;
+    max-width: 550px;
+    min-width: 330px;
     height: 126px;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+    margin-right: 10px;
     border-radius: 16px;
-    border: 1px solid var(--Duhinas-Colors-cict-brand-accent, #FF9422);
-    background: var(--mobile-bg-for-glass, rgba(19, 18, 18, 0.22));
+    border: 2px solid var(--event-bg-color);
+    background: var(--mobile-bg-for-glass);
     border-bottom: none;
-
-/* pc glass effect */
-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
 }
+
 .main__event-container--completed p{
-    color: #FFF;
-text-align: center;
-
-/* Duhina's Styles/h4 */
-font-family: Oxanium;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%; /* 27px */
+    padding-top: 2px;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
 }
+
 .main__match-info-container{
+    width: 100%;
     align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: row;
-    row-gap: 25px;
+    gap: 1.5rem;
 }
 
 .main__event-team,
 .main__event-team-reversed{
     display: flex;
     flex-direction: row;
-    
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main__event-team p,
+.main__event-team-reversed p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 130%; /* 31.2px */
+}
+
+.main__event-score-container p {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main__event-score-container p span {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 130%; /* 31.2px */
+}
+
+.main__event-score-container p span:nth-child(2) {
+    background: #F48128;
+    width: 2px;
+    height: 46px;
 }
 
 .main__event-info-container{
@@ -90,19 +131,14 @@ line-height: 150%; /* 27px */
     display: flex;
     flex-direction: row;
     border-radius: 0px 0px 16px 16px;
-    background: linear-gradient(180deg, #FF9422 0%, #78481F 100%); 
+    background: linear-gradient(180deg, var(--event-bg-color) 0%, #78481F 100%); 
     justify-content: space-between;
     padding: 0 15px;
 }
 
 .main__event-info-container p{
-    color: #FFF;
-text-align: center;
-
-/* Duhina's Styles/h4 */
-font-family: Oxanium;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%; /* 27px */
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
 }
