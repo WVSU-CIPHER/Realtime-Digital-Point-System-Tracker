@@ -13,14 +13,14 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px; /* for vertical scrollbars */
+    width: 10px; 
     height: 0px;
 }
 
 .main__subheading{
     font-size: 2rem;
     font-weight: 800;
-    line-height: 130%; /* 41.6px */
+    line-height: 130%;
     margin-bottom: 14px;
 }
 
@@ -32,7 +32,7 @@ main {
 .main__event-status  a{
     text-decoration: none;
     padding: 10px;
-    line-height: 150%; /* 27px */
+    line-height: 150%; 
     font-size: 1.125rem;
     font-weight: 700;
     text-align: center;
@@ -42,6 +42,12 @@ main {
     color: var(--dark-surface);
     background-color: var(--event-bg-color);
     border-radius: 5px;
+}
+
+.event-container {
+    display: none;
+  } .event-container.active {
+    display: block;
 }
 
 .main__container-events{
@@ -117,7 +123,7 @@ main {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 130%; /* 31.2px */
+    line-height: 130%; 
 }
 
 .main__event-score-container p span:nth-child(2) {
@@ -140,5 +146,5 @@ main {
     text-align: center;
     font-size: 1.125rem;
     font-weight: 700;
-    line-height: 150%; /* 27px */
+    line-height: 150%; 
 }
