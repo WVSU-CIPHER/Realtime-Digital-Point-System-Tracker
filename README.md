@@ -10,19 +10,24 @@
 # Windows
 ### Installation of the needed dependencies
 1. JavaScript Package Manager / Environment (Choose one!)
-    - Bun : powershell -c "irm bun.sh/install.ps1|iex"
+    - Bun : 
+        > powershell -c "irm bun.sh/install.ps1|iex"
     - NodeJS : Node Package Manager - Fast Node Manager
-        - winget install Schniz.fnm # installs fnm (Fast Node Manager)
-        - fnm env --use-on-cd | Out-String | Invoke-Expression # configure fnm environment
-        - fnm use --install-if-missing 22 # download and install Node.js
-        - node -v # should print `v22.9.0` # verifies the right Node.js version is in the environment
-2. Vite
+        > `winget install Schniz.fnm` # installs (Fast Node Manager)
 
-        - Node : `npm install vite@latest`
-        - Bun  : `bun install vite@latest`
+        > `fnm env --use-on-cd | Out-String | Invoke-Expression` # configure fnm environment
+
+        > `fnm use --install-if-missing 22` # download and install Node.js
+
+        > `node -v` # should print v22.9.0 # verifies the right Node.js version is in the environment
+2. Vite
+    - Node : 
+    > `npm install vite@latest`
+    - Bun  : 
+    > `bun install vite@latest`
 
 3. Node Version Manager (NVM) 
-    - https://github.com/coreybutler/nvm-windows/releases 
+    > https://github.com/coreybutler/nvm-windows/releases 
         
 > ## Important : 
     > A Node Package Manager is important as sooner the project might require some specific version of node for specific modules / packages, comparing the performances of the backend might require comparing version of node to run the backend on if you use `NodeJS`.
@@ -38,10 +43,11 @@
 
 ### Installing PHP
 - Visit the PHP Webpage to Install latest Version of PHP
+    > https://windows.php.net/downloads/releases/php-8.3.11-nts-Win32-vs16-x64.zip
 
-        https://windows.php.net/downloads/releases/php-8.3.11-nts-Win32-vs16-x64.zip
-- Extract the ZIP folder on the folder of choice. Prefered using C:/php
-- Add the PHP Environment variable by Searching `Environment Variables` on your Search Bar or on Control Panel 
+    - Extract the ZIP folder on the folder of choice. Prefered using 'C:/php'
+
+    - Add the PHP Environment variable by Searching `Environment Variables` on your Search Bar or on Control Panel 
 > Note: NO Command Here cause I literally destroyed my PC path files creating a script to simplify this process, and yes I destroyed my environment variables using setx and will be reinstalling and yes also my registry! So, don't do it, thanks. :)
 
 ![environment.png](./documentation/img/environment.png)
