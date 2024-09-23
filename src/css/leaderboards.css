@@ -1,18 +1,21 @@
 .main__leaderboards{
     display: flex;
     flex-direction: row;
-    width: 116%;
+    width: 100%;
+    gap: 20px;
+    height: 324px;
     justify-content: space-between;
 }
 
 .main__ranking{
+    display: flex;
     border-radius: 16px;
     border: 1px solid var(--Duhinas-Colors-cict-brand-accent, #FF9422);
     background: rgba(19, 18, 18, 0.53);
     backdrop-filter: blur(1px);
-    width: 739px;
-    height: 324px;
-    flex-shrink: 0;
+    /* min-width: 700px; */
+    width: 100% ;
+    padding: 20px;
 }
 
 .main__subheading{
@@ -20,56 +23,60 @@
 }
 
 .main__progress{
-    padding: 4px;
-    margin: 10px;
-    
+    /* padding: 4px; */
+    /* margin: 10px; */
+    max-width: 426.949px;
+    width: 100%;
 }
 
 .progress__points{
     border: 1px solid #FF9422;
     border-radius: 16px;
-    width: 426.949px;
+    width: 100%;
     height: 97px;
-    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
     fill: rgba(19, 18, 18, 0.53);
     stroke-width: 1px;
     stroke: var(--Duhinas-Colors-cict-brand-accent, #FF9422);
     backdrop-filter: blur(1px);
-    margin-bottom:  10px;
+    margin-bottom:  18px;
+    padding: 40px 20px 20px;
 }
 
-.two__tawsan{
-    display: flex;
-    width: 171.994px;
-    height: 79px;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-shrink: 0;
+.points__total{
     color: #F48128;
     text-align: center;
-    font-family: Oxanium;
     font-size: 48px;
-    font-style: normal;
     font-weight: 800;
     line-height: 110%; 
-    margin: 10px;
-   position: absolute;
-    right: 0px;
-    bottom: 0px; 
+    /* margin: 10px; */
+    display: inline-flex;
+}
+
+.points__total span {
+    text-transform: uppercase;
+    color: #F48128;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 12px 8px 0;
 }
 
 
-.total__college__points{
-    margin: 10px;
-    position: absolute;
-    bottom: -0.35em;
+.points__text{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%; /* 21px */
+    letter-spacing: 0.5px;
 }
 
 .progress__remaining{
-    width: 427px;
     height: 209px;
-    flex-shrink: 0;
+    display: flex;
     border-radius: 16px;
+    padding: 20px 10px;
     border: 1px solid var(--Duhinas-Colors-cict-brand-accent, #FF9422);
     background: rgba(19, 18, 18, 0.53);
     backdrop-filter: blur(1px);
@@ -77,32 +84,31 @@
 }
 
 .college__fundays__progress{
-    margin: 10px;
+    /* margin: 10px; */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
 }
 
-.day__remaining{
-   margin: 10px;
-   position: absolute;
-    right: 0px;
-    bottom: 0px;    
+.remaining__percentage,
+.remaining__days {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.progress__bar{
-    margin: 10px;
-    position: absolute;
-    left: 40px;
+.remaining__percentage{
+    justify-content: flex-start;
 }
 
-.zero{
-    margin: 10px;
-   position: absolute;
-    right: 0px;
-    top: 10px;
+
+
+.remaining__days span{
     color: #F48128;
     text-align: center;
-    font-family: Oxanium;
     font-size: 128px;
-    font-style: normal;
     font-weight: 800;
     line-height: 110%;    
 }
