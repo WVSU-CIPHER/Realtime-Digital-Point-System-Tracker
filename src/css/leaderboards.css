@@ -1,0 +1,108 @@
+.main__leaderboards{
+    display: flex;
+    flex-direction: row;
+    width: 116%;
+    justify-content: space-between;
+}
+
+.main__ranking{
+    border-radius: 16px;
+    border: 1px solid var(--Duhinas-Colors-cict-brand-accent, #FF9422);
+    background: rgba(19, 18, 18, 0.53);
+    backdrop-filter: blur(1px);
+    width: 739px;
+    height: 324px;
+    flex-shrink: 0;
+}
+
+.main__subheading{
+    margin: 10px;
+}
+
+.main__progress{
+    padding: 4px;
+    margin: 10px;
+    
+}
+
+.progress__points{
+    border: 1px solid #FF9422;
+    border-radius: 16px;
+    width: 426.949px;
+    height: 97px;
+    flex-shrink: 0;
+    fill: rgba(19, 18, 18, 0.53);
+    stroke-width: 1px;
+    stroke: var(--Duhinas-Colors-cict-brand-accent, #FF9422);
+    backdrop-filter: blur(1px);
+    margin-bottom:  10px;
+}
+
+.two__tawsan{
+    display: flex;
+    width: 171.994px;
+    height: 79px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #F48128;
+    text-align: center;
+    font-family: Oxanium;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; 
+    margin: 10px;
+   position: absolute;
+    right: 0px;
+    bottom: 0px; 
+}
+
+
+.total__college__points{
+    margin: 10px;
+    position: absolute;
+    bottom: -0.35em;
+}
+
+.progress__remaining{
+    width: 427px;
+    height: 209px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid var(--Duhinas-Colors-cict-brand-accent, #FF9422);
+    background: rgba(19, 18, 18, 0.53);
+    backdrop-filter: blur(1px);
+    margin-bottom: 50px;
+}
+
+.college__fundays__progress{
+    margin: 10px;
+}
+
+.day__remaining{
+   margin: 10px;
+   position: absolute;
+    right: 0px;
+    bottom: 0px;    
+}
+
+.progress__bar{
+    margin: 10px;
+    position: absolute;
+    left: 40px;
+}
+
+.zero{
+    margin: 10px;
+   position: absolute;
+    right: 0px;
+    top: 10px;
+    color: #F48128;
+    text-align: center;
+    font-family: Oxanium;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;    
+}
