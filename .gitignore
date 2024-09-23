@@ -21,3 +21,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# Preparation for deployment
+public/
+src/
+documentation/
+package.json
+package-lock.json
+README.md
+bun.lockb
+vite.config.js
+node_modules
