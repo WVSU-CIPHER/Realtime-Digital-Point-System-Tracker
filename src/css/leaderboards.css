@@ -1,21 +1,28 @@
+:root {
+    --border-color: #FF9422;
+    --border-accent-color: #F48128;
+    --bg-blur: rgba(19, 18, 18, 0.53);
+}
+
 .main__leaderboards{
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 20px;
-    height: 324px;
+    gap: 1.25rem;
+    /* height: 324px; */
     justify-content: space-between;
+    margin-bottom: 2.25rem;
 }
 
 .main__ranking{
     display: flex;
     border-radius: 16px;
-    border: 1px solid var(--Duhinas-Colors-cict-brand-accent, #FF9422);
-    background: rgba(19, 18, 18, 0.53);
+    border: 1px solid var(--border-color);
+    background: var(--bg-blur);
     backdrop-filter: blur(1px);
     /* min-width: 700px; */
     width: 100% ;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .main__subheading{
@@ -30,26 +37,27 @@
 }
 
 .progress__points{
-    border: 1px solid #FF9422;
+    border: 1px solid var(--border-color);
     border-radius: 16px;
     width: 100%;
-    height: 97px;
+    /* height: 97px; */
+    text-align: center;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 1rem;
     justify-content: space-between;
-    fill: rgba(19, 18, 18, 0.53);
+    background: var(--bg-blur);
     stroke-width: 1px;
-    stroke: var(--Duhinas-Colors-cict-brand-accent, #FF9422);
+    stroke: var(--border-color);
     backdrop-filter: blur(1px);
-    margin-bottom:  18px;
-    padding: 40px 20px 20px;
+    margin-bottom:  1.125rem;
+    padding: 2.5rem 1.25rem 1.25rem;
 }
 
 .points__total{
-    color: #F48128;
+    color: var(--border-accent-color);
     text-align: center;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 800;
     line-height: 110%; 
     /* margin: 10px; */
@@ -58,34 +66,43 @@
 
 .points__total span {
     text-transform: uppercase;
-    color: #F48128;
-    font-size: 20px;
+    color: var(--border-accent-color);
+    font-size: 1.25rem;
     font-weight: 600;
     margin: 12px 8px 0;
 }
 
 
 .points__text{
-    font-size: 14px;
+    text-align: center;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 150%; /* 21px */
     letter-spacing: 0.5px;
 }
 
+.days__text {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%; /* 21px */
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
 .progress__remaining{
-    height: 209px;
+    /* height: 209px; */
     display: flex;
     border-radius: 16px;
-    padding: 20px 10px;
-    border: 1px solid var(--Duhinas-Colors-cict-brand-accent, #FF9422);
-    background: rgba(19, 18, 18, 0.53);
+    padding: 1.25rem 10px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-blur);
     backdrop-filter: blur(1px);
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .college__fundays__progress{
     /* margin: 10px; */
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 150%; /* 21px */
 }
@@ -97,18 +114,106 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .remaining__percentage{
     justify-content: flex-start;
 }
 
-
+.percentage__text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%; /* 21px */
+    letter-spacing: 0.5px;
+}
 
 .remaining__days span{
-    color: #F48128;
+    color: var(--border-accent-color);
     text-align: center;
-    font-size: 128px;
+    font-size: 8rem;
     font-weight: 800;
     line-height: 110%;    
+}
+
+@media screen and (max-width: 1200px) {
+    .main__leaderboards {
+        flex-direction: column;
+    }
+
+    .main__ranking {
+        flex-direction: column;
+    }
+
+    .main__progress {
+        display: flex;
+        gap: 20px;
+        max-width: none;
+        flex-direction: row;
+    }
+
+    .progress__remaining {
+        width: 70%;
+    }   
+
+    .progress__points {
+        margin-bottom: 0;
+        display: flex;
+        width: 30%;
+        height: inherit;
+        padding: 20px 10px;    
+        justify-content:stretch;
+        flex-direction: column-reverse;
+    }
+
+    .points__total {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .points__total {
+        display: inline-flex;
+        flex-direction: column;
+        
+    }
+
+    .points__total span {
+        display: flex;
+        justify-content: center;
+        line-height: 80%;
+        font-weight: 700;
+        margin: 0;
+        /* padding-bottom: 30px; */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .points__total {
+        font-size: 3rem;
+    }
+
+    .points__text, 
+    .percentage__text,
+    .days__text {
+        font-size: 12px;
+    }
+
+    .remaining__days span {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .points__text, 
+    .percentage__text,
+    .days__text {
+        font-size: 8px;
+    }
+
+    .remaining__days span {
+        font-size: 4rem;
+    }
 }
