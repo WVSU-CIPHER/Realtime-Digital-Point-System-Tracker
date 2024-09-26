@@ -59,7 +59,7 @@
     justify-content: space-between;
 }
 
-.main__event-container--completed{
+.main__event-container--completed , .main__event-container--ongoing, .main__event-container--upcoming{
     align-items: center;
     max-width: 550px;
     min-width: 330px;
@@ -75,12 +75,12 @@
     backdrop-filter: blur(2px);
 }
 
-.main__event-container--completed p{
+.main__event-container--completed p, .main__event-container--ongoing p, .main__event-container--upcoming p{
     padding-top: 2px;
     text-align: center;
     font-size: 1.125rem;
     font-weight: 700;
-    line-height: 150%; /* 27px */
+    line-height: 150%; 
 }
 
 .main__match-info-container{
@@ -92,12 +92,37 @@
     gap: 1.5rem;
 }
 
+.main__match-info-container--upcoming{
+    width: 100%;
+    align-items:center;
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    font-size: 48px;
+    font-weight: 700;   
+}
+.main__event-upcoming-time{
+    color: #B2AAAA;
+} .main__event-upcoming-time span{
+    font-size: 18px;
+    color: #B2AAAA;
+}
+
 .main__event-team,
 .main__event-team-reversed{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1.5rem;
+}.main__event-team--upcoming{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.0rem;
+    font-weight: 700;
+    color: #ffff;
+}.main__event-team--upcoming p{
+    font-size: 24px;
 }
 
 .main__event-team p,
@@ -105,12 +130,18 @@
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 130%; /* 31.2px */
+    line-height: 130%; 
 }
 
-.main__event-score-container p {
+.main__event-score-container p{
     display: inline-flex;
     align-items: center;
+    gap: 1rem;
+}
+.main__event-score-container-upcoming p {
+    padding-top: 14px;
+    display: inline-flex;
+    align-self: center;
     gap: 1rem;
 }
 
@@ -121,7 +152,7 @@
     line-height: 130%; 
 }
 
-.main__event-score-container p span:nth-child(2) {
+.main__event-score-container p span:nth-child(2), .main__event-score-container-upcoming p span:nth-child(2){
     background: #F48128;
     width: 2px;
     height: 46px;
@@ -143,3 +174,14 @@
     font-weight: 700;
     line-height: 150%; 
 }
+
+.main__event-info-container--upcoming p{
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 150%; 
+}
+#chart {
+    max-width: 500px;   /* Adjust to your desired max width */
+    margin: 0 auto;     /* Center the chart */
+  }

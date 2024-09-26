@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | CICT Fundays</title>
@@ -8,217 +9,420 @@
     <link rel="stylesheet" href="../css/events.css" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/leaderboards.css" />
-  </head>
-  <body>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+
+<body>
     <nav class="nav-bar">
-      <div class="logo">
-        <a href="/" style="text-decoration: none">
-          <h1 class="heading">CICT</h1>
-        </a>
-        <h4 class="sub-heading">FUNDAYS</h4>
-      </div>
-      <div class="navbar-link">
-        <a class="navbar-link navbar-link-home navbar-link--active" href="/home"
-          >Home</a
-        >
-        <a class="navbar-link navbar-link-competition" href="/competition"
-          >Competition Ladder</a
-        >
-        <a class="navbar-link navbar-link-curricula" href="/curricula"
-          >Curricula</a
-        >
-      </div>
+        <div class="logo">
+            <a href="/" style="text-decoration: none">
+                <h1 class="heading">CICT</h1>
+            </a>
+            <h4 class="sub-heading">FUNDAYS</h4>
+        </div>
+        <div class="navbar-link">
+            <a class="navbar-link navbar-link-home navbar-link--active" href="/home">Home</a>
+            <a class="navbar-link navbar-link-competition" href="/competition">Competition Ladder</a>
+            <a class="navbar-link navbar-link-curricula" href="/curricula">Curricula</a>
+        </div>
     </nav>
     <main>
-      <div class="main__leaderboards">
-        <div class="main__ranking">
-          <h1 class="main__subheading">LEADERBOARD</h1>
-          <!-- Include the graph here -->
-           
+        <div class="main__leaderboards">
+            <div class="main__ranking">
+                <h1 class="main__subheading">LEADERBOARD</h1>
+                <img src="" alt="" />
+            </div>
+            <div class="main__progress">
+                <div class="progress__points">
+                    <p class="points__text">TOTAL COLLEGE POINTS</p>
+                    <p class="points__total">2000 <span>pts</span></p>
+                </div>
+                <div class="progress__remaining">
+                    <div class="remaining__percentage">
+                        <p class="percentage__text">COLLEGE FUNDAYS PROGRESS</p>
+                        <div id="chart"></div>
+                    </div>
+                    <div class="remaining__days">
+                        <span>0</span>
+                        <h3 class="days__text">DAYS REMAINING</h3>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="main__progress">
-          <div class="progress__points">
-            <p class="points__text">TOTAL COLLEGE POINTS</p>
-            <p class="points__total">2000 <span>pts</span></p>
-          </div>
-          <div class="progress__remaining">
-            <div class="remaining__percentage">
-              <p class="percentage__text">COLLEGE FUNDAYS PROGRESS</p>
-              <img
-                class="progress__bar"
-                src="../images/progres bar.png"
-                alt="Progress bar"
-              />
-            </div>
-            <div class="remaining__days">
-              <span>0</span>
-              <h3 class="days__text">DAYS REMAINING</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="main__subheading">ACTIVE EVENTS</h2>
-      <div class="main__event-status">
-        <a class="main__active" id="btn-completed" href="#">COMPLETED</a>
-        <a id="btn-ongoing" href="#">ONGOING</a>
-        <a id="btn-upcoming" href="#">UPCOMING</a>
-      </div>
-
-      <div class="event-content">
-        <div id="completed-events" class="event-container active">
-          <div class="main__container-events">
-            <div class="main__event-container--completed">
-              <p>VOLLEYBALL MEN</p>
-              <div class="main__match-info-container">
-                <div class="main__event-team">
-                  <p>RYZEN</p>
-                  <img src="../images/Ellipse 47.svg" alt="#" />
-                </div>
-                <div class="main__event-score-container">
-                  <p><span>2</span><span></span><span>1</span></p>
-                </div>
-                <div class="main__event-team-reversed">
-                  <img src="../images/Ellipse 47.svg" alt="#" />
-                  <p>RYZEN</p>
-                </div>
-              </div>
-              <div class="main__event-info-container">
-                <p class="main__event-time">4:00 pm</p>
-                <p class="main__event-place">JUBILEE PARK</p>
-                <p class="main__event-match-number">Bo5</p>
-              </div>
-            </div>
-            <div class="main__event-container--completed">
-              <p>VOLLEYBALL MEN</p>
-              <div class="main__match-info-container">
-                <div class="main__event-team">
-                  <p>RYZEN</p>
-                  <img src="../images/Ellipse 47.svg" alt="#" />
-                </div>
-                <div class="main__event-score-container">
-                  <p><span>2</span><span></span><span>1</span></p>
-                </div>
-                <div class="main__event-team-reversed">
-                  <img src="../images/Ellipse 47.svg" alt="#" />
-                  <p>RYZEN</p>
-                </div>
-              </div>
-              <div class="main__event-info-container">
-                <p class="main__event-time">4:00 pm</p>
-                <p class="main__event-place">JUBILEE PARK</p>
-                <p class="main__event-match-number">Bo5</p>
-              </div>
-            </div>
-            <div class="main__event-container--completed">
-              <p>VOLLEYBALL MEN</p>
-              <div class="main__match-info-container">
-                <div class="main__event-team">
-                  <p>RYZEN</p>
-                  <img src="../images/Ellipse 47.svg" alt="#" />
-                </div>
-                <div class="main__event-score-container">
-                  <p><span>2</span><span></span><span>1</span></p>
-                </div>
-                <div class="main__event-team-reversed">
-                  <img src="../images/Ellipse 47.svg" alt="#" />
-                  <p>RYZEN</p>
-                </div>
-              </div>
-              <div class="main__event-info-container">
-                <p class="main__event-time">4:00 pm</p>
-                <p class="main__event-place">JUBILEE PARK</p>
-                <p class="main__event-match-number">Bo5</p>
-              </div>
-            </div>
-            <div class="main__event-container--completed">
-              <p>VOLLEYBALL MEN</p>
-              <div class="main__match-info-container">
-                <div class="main__event-team">
-                  <p>RYZEN</p>
-                  <img src="../images/Ellipse 47.svg" alt="#" />
-                </div>
-                <div class="main__event-score-container">
-                  <p>
-                    <span>2</span>
-                    <span></span>
-                    <span>1</span>
-                  </p>
-                </div>
-                <div class="main__event-team-reversed">
-                  <img src="../images/Ellipse 47.svg" alt="#" />
-                  <p>RYZEN</p>
-                </div>
-              </div>
-              <div class="main__event-info-container">
-                <p class="main__event-time">4:00 pm</p>
-                <p class="main__event-place">JUBILEE PARK</p>
-                <p class="main__event-match-number">Bo5</p>
-              </div>
-            </div>
-            <div class="main__event-container--completed">
-              <p>VOLLEYBALL MEN</p>
-              <div class="main__match-info-container">
-                <div class="main__event-team">
-                  <p>RYZEN</p>
-                  <img src="../images/Ellipse 47.svg" alt="#" />
-                </div>
-                <div class="main__event-score-container">
-                  <p><span>2</span><span></span><span>1</span></p>
-                </div>
-                <div class="main__event-team-reversed">
-                  <img src="../images/Ellipse 47.svg" alt="#" />
-                  <p>RYZEN</p>
-                </div>
-              </div>
-              <div class="main__event-info-container">
-                <p class="main__event-time">4:00 pm</p>
-                <p class="main__event-place">JUBILEE PARK</p>
-                <p class="main__event-match-number">Bo5</p>
-              </div>
-            </div>
-          </div>
+        <h2 class="main__subheading">ACTIVE EVENTS</h2>
+        <div class="main__event-status">
+            <a class="main__active" id="btn-completed" href="#">COMPLETED</a>
+            <a id="btn-ongoing" href="#">ONGOING</a>
+            <a id="btn-upcoming" href="#">UPCOMING</a>
         </div>
 
-        <div id="ongoing-events" class="event-container">
-          <!--Place your Ongoing events content here-->
-          <p>Ongoing Events Content</p>
-        </div>
-        <div id="upcoming-events" class="event-container">
-          <!--Place your Upcoming events content here-->
-          <p>Upcoming Events Content</p>
-        </div>
-      </div>
-      <!--main__container-events-->
+        <div class="event-content">
+            <div id="completed-events" class="event-container active">
+                <!-----------Completed Events----------------->
+                <div class="main__container-events">
+                    <div class="main__event-container--completed">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container">
+                            <div class="main__event-team">
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container">
+                                <p><span>2</span><span></span><span>1</span></p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-time">4:00 pm</p>
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+                    <div class="main__event-container--completed">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container">
+                            <div class="main__event-team">
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container">
+                                <p><span>2</span><span></span><span>1</span></p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-time">4:00 pm</p>
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+                    <div class="main__event-container--completed">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container">
+                            <div class="main__event-team">
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container">
+                                <p><span>2</span><span></span><span>1</span></p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-time">4:00 pm</p>
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+                    <div class="main__event-container--completed">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container">
+                            <div class="main__event-team">
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container">
+                                <p>
+                                    <span>2</span>
+                                    <span></span>
+                                    <span>1</span>
+                                </p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-time">4:00 pm</p>
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+                    <div class="main__event-container--completed">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container">
+                            <div class="main__event-team">
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container">
+                                <p><span>2</span><span></span><span>1</span></p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-time">4:00 pm</p>
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-------------Ongoing Events-------------->
+            <div id="ongoing-events" class="event-container">
+
+                <div class="main__container-events">
+                    <div class="main__event-container--ongoing">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container">
+                            <div class="main__event-team">
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container">
+                                <p><span>2</span><span></span><span>1</span></p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-time">4:00 pm</p>
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+                    <div class="main__event-container--ongoing">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container">
+                            <div class="main__event-team">
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container">
+                                <p><span>2</span><span></span><span>1</span></p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-time">4:00 pm</p>
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+                    <div class="main__event-container--ongoing">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container">
+                            <div class="main__event-team">
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container">
+                                <p><span>2</span><span></span><span>1</span></p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-time">4:00 pm</p>
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+                    <div class="main__event-container--ongoing">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container">
+                            <div class="main__event-team">
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container">
+                                <p>
+                                    <span>2</span>
+                                    <span></span>
+                                    <span>1</span>
+                                </p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-time">4:00 pm</p>
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+                    <div class="main__event-container--ongoing">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container">
+                            <div class="main__event-team">
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container">
+                                <p><span>2</span><span></span><span>1</span></p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-time">4:00 pm</p>
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------Upcoming Events------------------>
+            <div id="upcoming-events" class="event-container">
+                <div class="main__container-events">
+                    <div class="main__event-container--upcoming">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container--upcoming">
+                            <div class="main__event-team--upcoming">
+                                <div class="main__event-upcoming-time">4:00<span>pm</span></div>
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container-upcoming">
+                                <p><span></span><span></span><span></span></p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+
+                    <div class="main__event-container--upcoming">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container--upcoming">
+                            <div class="main__event-team--upcoming">
+                                <div class="main__event-upcoming-time">4:00<span>pm</span></div>
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container-upcoming">
+                                <p><span></span><span></span><span></span></p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+                    <div class="main__event-container--upcoming">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container--upcoming">
+                            <div class="main__event-team--upcoming">
+                                <div class="main__event-upcoming-time">4:00<span>pm</span></div>
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container-upcoming">
+                                <p><span></span><span></span><span></span></p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+
+                    <div class="main__event-container--upcoming">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container--upcoming">
+                            <div class="main__event-team--upcoming">
+                                <div class="main__event-upcoming-time">4:00<span>pm</span></div>
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container-upcoming">
+                                <p><span></span><span></span><span></span></p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+
+                    <div class="main__event-container--upcoming">
+                        <p>VOLLEYBALL MEN</p>
+                        <div class="main__match-info-container--upcoming">
+                            <div class="main__event-team--upcoming">
+                                <div class="main__event-upcoming-time">4:00<span>pm</span></div>
+                                <p>RYZEN</p>
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                            </div>
+                            <div class="main__event-score-container-upcoming">
+                                <p><span></span><span></span><span></span></p>
+                            </div>
+                            <div class="main__event-team-reversed">
+                                <img src="../images/Ellipse 47.svg" alt="#" />
+                                <p>RYZEN</p>
+                            </div>
+                        </div>
+                        <div class="main__event-info-container">
+                            <p class="main__event-place">JUBILEE PARK</p>
+                            <p class="main__event-match-number">Bo5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--main__container-events-->
     </main>
 
     <nav class="bottom-nav">
-      <a href="#" class="bottom-nav__link bottom-nav__link--active">
-        <img
-          src="../images/home 3.svg"
-          alt="Home button"
-          class="bottom-nav__icon"
-        />
-        <p>Home</p>
-      </a>
-      <a href="#" class="bottom-nav__link">
-        <img
-          src="../images/ranking (1) 1.svg"
-          alt="Standings button"
-          class="bottom-nav__icon"
-        />
-        <p>Competition Ladder</p>
-      </a>
-      <a href="#" class="bottom-nav__link">
-        <img
-          src="../images/people 3.svg"
-          alt="Curricula button"
-          class="bottom-nav__icon"
-        />
-        <p>Curricula</p>
-      </a>
+        <a href="#" class="bottom-nav__link bottom-nav__link--active">
+            <img src="../images/home 3.svg" alt="Home button" class="bottom-nav__icon" />
+            <p>Home</p>
+        </a>
+        <a href="#" class="bottom-nav__link">
+            <img src="../images/ranking (1) 1.svg" alt="Standings button" class="bottom-nav__icon" />
+            <p>Competition Ladder</p>
+        </a>
+        <a href="#" class="bottom-nav__link">
+            <img src="../images/people 3.svg" alt="Curricula button" class="bottom-nav__icon" />
+            <p>Curricula</p>
+        </a>
     </nav>
     <img class="bg-image" src="../images/bg-image.png" />
 
     <script src="../../src/js/events.js"></script>
-  </body>
+</body>
+
 </html>
