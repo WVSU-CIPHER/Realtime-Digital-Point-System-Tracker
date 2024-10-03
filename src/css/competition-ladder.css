@@ -111,7 +111,6 @@ main {
 
 .tab-active {
   background-color: #f48128;
-  /* padding-inline: clamp(0.25rem, 0.5rem, 0.5rem); */
   padding-inline: 0.5rem;
   text-align: center;
   color: black;
@@ -296,12 +295,12 @@ main {
 .bracket-container {
   display: flex;
   flex-direction: column;
-  gap: clamp(1rem, 2rem, 5rem); /* Fluid gap from 1rem to 2rem */
+  gap: clamp(1rem, 2rem, 5rem);
 }
 
 .team-name {
   text-transform: uppercase;
-  font-size: clamp(14px, 24px); /* Responsive font size */
+  font-size: clamp(14px, 18px, 24px);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -326,9 +325,6 @@ main {
   background-color: #975522;
   border-radius: 50%;
 }
-/* THIS IS FOR THE FIRST DIRECT CHILD OF TEAM-CARD */
-
-/* THIS IS FOR THE SECOND DIRECT CHILD OF TEAM-CARD */
 .team-card__container > div:nth-of-type(2) {
   background-color: rgba(244, 129, 40, 0.25);
 }
