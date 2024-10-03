@@ -191,7 +191,7 @@ var options = {
       fontSize: '18px'
     },
     formatter: function (val, opt) {
-      return teamNames[opt.dataPointIndex] || ''; 
+      return teamNames[opt.dataPointIndex] || '';
     },
     dropShadow: {
       enabled: true
@@ -240,4 +240,13 @@ var options = {
 };
 
 var chart = new ApexCharts(document.querySelector("#bar-chart"), options);
-chart.render();
+function _render(delay) {
+  setTimeout(() => {
+    chart.render();
+
+  }, delay)
+}
+_render(0)
+function rests() {
+  // todo:
+}
