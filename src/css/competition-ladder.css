@@ -1,4 +1,5 @@
 /* Utilities */
+
 .hl {
   border: 1px solid white !important;
 }
@@ -427,14 +428,14 @@ main {
 
 .cl__drop-down-menu-item {
   display: flex;
-  gap: 1rem;
+  gap: 1.25rem;
   align-items: center;
 }
 
 .cl__drop-down-label {
   text-transform: uppercase;
   color: #f48128;
-  font-size: 10px;
+  font-size: clamp(10px, 2vw, 1rem);
   font-weight: 700;
 }
 /* STANDING */
@@ -561,6 +562,10 @@ main {
 
   .cl__col-content-container {
     padding-inline-start: 0;
+  }
+
+  .cl__bracket-content {
+    max-width: 80%;
   }
 
   main {
