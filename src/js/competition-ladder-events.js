@@ -19,3 +19,4 @@ function switchTab(tab) {
         bracketingTab.classList.add('tab-active');
     }
 }
+
