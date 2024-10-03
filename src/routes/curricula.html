@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | CICT Fundays</title>
+
+    <link rel="stylesheet" href="../css/events.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/curricula.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+
+</head>
+
+<body>
+
+    <!-- ====== NAVBAR : start ======= -->
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="/" style="text-decoration: none">
+                <h1 class="heading">CICT</h1>
+            </a>
+            <h4 class="sub-heading">FUNDAYS</h4>
+        </div>
+        <div class="navbar-link">
+            <a class="navbar-link navbar-link-home navbar-link--active" href="/home">Home</a>
+            <a class="navbar-link navbar-link-competition" href="/competition">Competition Ladder</a>
+            <a class="navbar-link navbar-link-curricula" href="/curricula">Curricula</a>
+        </div>
+    </nav>
+    <!-- ====== NAVBAR : end ======= -->
+
+    <main>
+        <h1>CURRICULA</h1>
+
+
+        <!-- ====== MOBILE drop down : start ======= -->
+        <section class="dropdown-container">
+            <div class="dropdown">
+                <!-- since dropdown options are overflowing in mobile -->
+                <div class="dropdown-header">
+                    <h2>SELECT BATCH...</h2>
+                    <span class="dropdown-icon">&#x25BC;</span>
+                </div>
+                <div class="select-options hide-options">
+                    <span class="options" id="1">
+                        BATCH 1
+                    </span>
+                    <span class="options" id="2">
+                        BATCH 2
+                    </span>
+                    <span class="options" id="3">
+                        BATCH 3
+                    </span>
+                    <span class="options" id="4">
+                        BATCH 4
+                    </span>
+                </div>
+            </div>
+
+        </section>
+        <!-- ====== MOBILE drop down : end ======= -->
+
+
+        <section class="bg-test flex">
+
+            <!-- ====== CURRICULA : start ======= -->
+            <div class="curriculum flex flex-direct">
+
+                <h2>CURRICULUM</h2>
+                <aside class="flex flex-direct">
+                    <!-- === 1ST YEAR === -->
+                    <section id="b1" class="flex batch-container selected__active">
+                        <div class="circle-img">
+                            <!-- this should be an image -->
+                        </div>
+                        <div>
+                            <h3>BATCH NAME</h3>
+                            <p>YEAR LEVEL</p>
+                        </div>
+                    </section>
+                    <!-- === 2ND YEAR === -->
+                    <section id="b2" class="flex batch-container ">
+                        <div class="circle-img">
+                            <!-- this should be an image -->
+                        </div>
+                        <div>
+                            <h3>BATCH NAME</h3>
+                            <p>YEAR LEVEL</p>
+                        </div>
+                    </section>
+                    <!-- === 3RD YEAR === -->
+                    <section id="b3" class="flex batch-container">
+                        <div class="circle-img">
+                            <!-- this should be an image -->
+                        </div>
+                        <div>
+                            <h3>BATCH NAME</h3>
+                            <p>YEAR LEVEL</p>
+                        </div>
+                    </section>
+
+                    <!-- === 1ST YEAR === -->
+                    <section id="b4" class="flex batch-container">
+                        <div class="circle-img">
+                            <!-- this should be an image -->
+                        </div>
+                        <div>
+                            <h3>BATCH NAME</h3>
+                            <p>YEAR LEVEL</p>
+                        </div>
+                    </section>
+
+
+                </aside>
+            </div>
+            <!-- ====== CURRICULA : end ======= -->
+
+
+            <!-- ====== FEATS : start ======= -->
+            <div class="fundays-feats flex flex-direct">
+                <h2>FUNDAYS FEATS</h2>
+
+                <div class="dynamic-content flex flex-direct feats-body">
+                    <div class="flex">
+                        <!-- show: current batch -->
+                        <section id="b1" class="flex current_batch">
+                            <div class="circle-img">
+                                <!-- this should be an image -->
+                            </div>
+                            <div>
+                                <h3>BATCH NAME</h3>
+                                <p>YEAR LEVEL</p>
+                            </div>
+                        </section>
+
+
+                        <!-- show: batch total points -->
+                        <div class="flex flex-direct batch-points">
+                            <span>12345</span>
+                            <span>TOTAL POINTS ACQUIRED</span>
+                        </div>
+
+                    </div>
+                    <!-- batch event credentials list -->
+                    <section>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>EVENT NAME</th>
+                                    <th>PLACEMENT</th>
+                                    <th>POINTS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>EVENT NAME</td>
+                                    <td>PLACEMENT</td>
+                                    <td>9999</td>
+                                </tr>
+                                <tr>
+                                    <td>EVENT NAME</td>
+                                    <td>PLACEMENT</td>
+                                    <td>9999</td>
+                                </tr>
+                                <tr>
+                                    <td>EVENT NAME</td>
+                                    <td>PLACEMENT</td>
+                                    <td>9999</td>
+                                </tr>
+                                <tr>
+                                    <td>EVENT NAME</td>
+                                    <td>PLACEMENT</td>
+                                    <td>9999</td>
+                                </tr>
+                                <tr>
+                                    <td>EVENT NAME</td>
+                                    <td>PLACEMENT</td>
+                                    <td>9999</td>
+                                </tr>
+                                <tr>
+                                    <td>EVENT NAME</td>
+                                    <td>PLACEMENT</td>
+                                    <td>9999</td>
+                                </tr>
+                                <!--  -->
+                                <tr>
+                                    <td>EVENT NAME</td>
+                                    <td>PLACEMENT</td>
+                                    <td>9999</td>
+                                </tr>
+                                <tr>
+                                    <td>EVENT NAME</td>
+                                    <td>PLACEMENT</td>
+                                    <td>9999</td>
+                                </tr>
+                                <tr></tr>
+                                <td>EVENT NAME</td>
+                                <td>PLACEMENT</td>
+                                <td>9999</td>
+                                </tr>
+                                <tr>
+                                    <td>EVENT NAME</td>
+                                    <td>PLACEMENT</td>
+                                    <td>9999</td>
+                                </tr>
+                                <tr></tr>
+                                <td>EVENT NAME</td>
+                                <td>PLACEMENT</td>
+                                <td>9999</td>
+                                </tr>
+                                <tr>
+                                    <td>EVENT NAME</td>
+                                    <td>PLACEMENT</td>
+                                    <td>9999</td>
+                                </tr>
+                                <tr></tr>
+                                <td>EVENT NAME</td>
+                                <td>PLACEMENT</td>
+                                <td>9999</td>
+                                </tr>
+                                <tr>
+                                    <td>EVENT NAME</td>
+                                    <td>PLACEMENT</td>
+                                    <td>9999</td>
+                                </tr>
+                                <tr></tr>
+                                <td>EVENT NAME</td>
+                                <td>PLACEMENT</td>
+                                <td>9999</td>
+                                </tr>
+                                <tr>
+                                    <td>EVENT NAME</td>
+                                    <td>PLACEMENT</td>
+                                    <td>9999</td>
+                                </tr>
+                                <tr></tr>
+                                <td>EVENT NAME</td>
+                                <td>PLACEMENT</td>
+                                <td>9999</td>
+                                </tr>
+                                <tr>
+                                    <td>EVENT NAME</td>
+                                    <td>PLACEMENT</td>
+                                    <td>9999</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </section>
+
+
+                    <section>
+
+                    </section>
+                </div>
+
+            </div>
+            <!-- ====== FEATS : end ======= -->
+        </section>
+
+
+    </main>
+
+
+    <!-- ================ FOR MOBILE ================ -->
+    <nav class="bottom-nav">
+        <a href="#" class="bottom-nav__link ">
+            <img src="../images/home 3.svg" alt="Home button" class="bottom-nav__icon" />
+            <p>Home</p>
+        </a>
+        <a href="#" class="bottom-nav__link">
+            <img src="../images/ranking (1) 1.svg" alt="Standings button" class="bottom-nav__icon" />
+            <p>Competition Ladder</p>
+        </a>
+        <a href="#" class="bottom-nav__link bottom-nav__link--active">
+            <img src="../images/people 3.svg" alt="Curricula button" class="bottom-nav__icon" />
+            <p>Curricula</p>
+        </a>
+    </nav>
+    <img class="bg-image" src="../images/bg-image.png" />
+
+
+
+    <script src="../../src/js/curricula.js"></script>
+</body>
+
+</html>
