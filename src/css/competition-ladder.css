@@ -96,21 +96,30 @@ main {
   border-left: none;
 }
 
-.col-1__head-title > h1,
-.col-2__head-title > h1 {
+.col-1__head-title > h1 {
   font-size: clamp(10px, 3vw, 24px);
   line-height: 31.2px;
   text-transform: uppercase;
 }
 
-/* Hover state for tab button */
-.col-2__head-title > h1:nth-child(2) {
+.standing-tab,
+.bracketing-tab {
+  font-size: clamp(10px, 3vw, 24px);
+  line-height: 31.2px;
+  text-transform: uppercase;
+}
+
+.tab-active {
   background-color: #f48128;
   /* padding-inline: clamp(0.25rem, 0.5rem, 0.5rem); */
   padding-inline: 0.5rem;
   text-align: center;
   color: black;
   border-radius: 5px;
+}
+
+.tab-btn {
+  cursor: pointer;
 }
 
 .cl__events {
@@ -216,10 +225,10 @@ main {
 
 .cl__event-item:hover {
   border-right: 4px solid #f48128;
+}
 
-  .circle-element {
-    background-color: #f48128;
-  }
+.cl__event-item:hover > .circle-element {
+  background-color: #f48128;
 }
 
 .cl__event-item > .circle-element {

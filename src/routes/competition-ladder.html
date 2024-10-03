@@ -208,14 +208,27 @@
         <article class="cl__col-2">
           <!-- INTERACTIVE TABS -->
           <div class="col-2__head-title">
-            <h1>Standings</h1>
-            <h1>Bracketing</h1>
+            <h1
+              id="standing-tab-btn"
+              class="standing-tab tab-btn"
+              onclick="switchTab('standing')"
+            >
+              Standings
+            </h1>
+            <h1
+              id="bracketing-tab-btn"
+              class="bracketing-tab tab-btn"
+              onclick="switchTab('bracketing')"
+            >
+              Bracketing
+            </h1>
           </div>
 
           <section class="cl__col-content-container">
             <div class="cl__col-content-sub-container">
               <!-- CONTENT [STANDINGS] -->
-              <section class="cl__standing-content hide">
+              <!-- You may use the .hide class to either display or not the sections that are representing the contest standing and brackets -->
+              <section id="cl__standing" class="cl__standing-content">
                 <!-- TABLE TITLES -->
                 <section class="standing-head-titles">
                   <div>
@@ -262,7 +275,7 @@
               </section>
 
               <!-- CONTENT  [BRACKETS] -->
-              <section class="cl__bracket-content">
+              <section id="cl__bracket" class="cl__bracket-content hide">
                 <!-- FIRST FOR BRACKETS -->
                 <div class="bracket-container abv-1">
                   <article class="elimination-round">
@@ -384,4 +397,7 @@
 
     <!-- Others -->
   </body>
+
+  <!-- events for competition ladder -->
+  <script src="../js/competition-ladder-events.js"></script>
 </html>
