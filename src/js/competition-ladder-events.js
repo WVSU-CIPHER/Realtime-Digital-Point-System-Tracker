@@ -11,7 +11,7 @@ function switchTab(tab) {
 
         standingTab.classList.add('tab-active');
         bracketingTab.classList.remove('tab-active');
-    } else if (tab === 'bracketing') {
+    } else { // 'else focus on brackets'
         standingSection.classList.add('hide');
         bracketSection.classList.remove('hide');
 
@@ -20,3 +20,22 @@ function switchTab(tab) {
     }
 }
 
+function toggleDropdown() {
+    const dropDownContent = document.getElementById("cl__drop-down-content");
+    const dropDownBtn = document.getElementById("cl__drop-down-btn");
+    const dropDownChev = document.querySelector(".cl__drop-down-chev-down");
+
+    if (dropDownContent.classList.contains("hide")) {
+        dropDownContent.classList.remove("hide");
+        dropDownContent.classList.add("show");
+        dropDownBtn.setAttribute("aria-expanded", "true");
+        dropDownChev.classList.add("rotate-feedback");
+    } else {
+        dropDownContent.classList.remove("show");
+        dropDownContent.classList.add("hide");
+        dropDownBtn.setAttribute("aria-expanded", "false");
+        dropDownChev.classList.remove("rotate-feedback");
+    }
+}
+
+document.getElementById("cl__drop-down-btn").addEventListener("click", toggleDropdown);

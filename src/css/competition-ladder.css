@@ -414,7 +414,6 @@ main {
   gap: 1rem;
   align-items: center;
 }
-
 /* Mobile dropdown */
 .cl__drop-down-menu {
   border: 1px solid rgba(244, 129, 40, 0.3);
@@ -422,8 +421,10 @@ main {
   justify-content: space-between;
   padding-inline: 10px;
   align-items: center;
-  padding-block: 10px;
   display: none;
+  padding-block: 10px;
+  position: relative; /* Removed duplicate display: none */
+  cursor: pointer;
 }
 
 .cl__drop-down-menu-item {
@@ -438,6 +439,46 @@ main {
   font-size: clamp(10px, 2vw, 1rem);
   font-weight: 700;
 }
+
+.cl__drop-down-content {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 4rem;
+  background: rgb(20, 11, 4);
+  border: 1px solid rgba(244, 129, 40, 0.3);
+  padding-inline: 0.25rem;
+  padding-block: 0.5rem;
+  z-index: 10;
+  overflow: auto;
+}
+
+.cl__drop-down-content-item {
+  color: white;
+  font-size: clamp(14px, 2vw, 1.25rem);
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+.cl__drop-down-content.show {
+  max-height: 400px;
+  transition: max-height 0.3s ease;
+}
+.cl__drop-down-content.hide {
+  max-height: 0;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+
+.cl__drop-down-chev-down {
+  transition: transform 0.3s ease;
+}
+
+/* rotate the chevron */
+.rotate-feedback {
+  transform: rotate(180deg);
+}
+
 /* STANDING */
 .cl__standing-content {
   width: 100%;
@@ -490,7 +531,8 @@ main {
 
 .standing-batch-name-rank {
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
+  justify-content: space-between;
   align-items: center;
 }
 
