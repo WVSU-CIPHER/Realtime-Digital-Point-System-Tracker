@@ -357,13 +357,6 @@ main {
   }
 }
 
-/* For active */
-
-/* Style for number in team-card */
-/* .team-card > p {
-  font-size: clamp(16px, 2vw, 24px);
-  font-weight: 700;
-} */
 .team-card-points {
   text-transform: uppercase;
   font-weight: 700;
