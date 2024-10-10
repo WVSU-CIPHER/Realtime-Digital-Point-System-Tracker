@@ -221,7 +221,7 @@ main {
   gap: 1rem;
   padding-inline-end: 1rem;
   align-items: center;
-  padding-block: 17px;
+  padding-block: 10px;
   border-right: 4px solid transparent;
   cursor: pointer;
   transition: all 0.2s;
