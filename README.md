@@ -1,8 +1,23 @@
 
-# Project ReDiPoST (Ready PoST)
-# Realtime Digital Point System Tracker
-#
-### By: WVSU Cipher 
+# Project Realtime Digital Point System Tracker
+### By: WVSU - SPARK Hub and WVSU - Cipher 
+### Project Team
+1. Project Manager
+    - Kirk Gamo
+2. Project Supervisor
+    - Keane Dalisay
+3. UI/UX Designers
+    - Mark Andrei Encanto
+    - Joseph Junel Reyes
+4. Front-end Developers
+    - Allyn Ralf Ledesma
+    - Quincy Macalalag
+    - John Chrizper Escorpiso
+    - Gabrielle Ann Concepcion
+6. Back-end Developers
+    - Rei Ebenezer Duhina
+    - Dhominick John Billena
+    - Christopher Glenn Bedis
 #
 
 ### Based on operating system types: 
