@@ -1,17 +1,17 @@
 // Active events
-const completedBtn = document.getElementById('btn-completed');
-const ongoingBtn = document.getElementById('btn-ongoing');
+const completedBtn = document.getElementById('btnCompleted');
+const ongoingBtn = document.getElementById('btnOngoing');
 const upcomingBtn = document.getElementById('btn-upcoming');
 
-const completedContent = document.getElementById('completed-events');
-const ongoingContent = document.getElementById('ongoing-events');
-const upcomingContent = document.getElementById('upcoming-events');
+const completedContent = document.getElementById('completedEvents');
+const ongoingContent = document.getElementById('ongoingEvents');
+const upcomingContent = document.getElementById('upcomingEvents');
 
 
-const buttons = document.querySelectorAll('.main__event-status a');
+const buttons = document.querySelectorAll('.mainEventStatus a');
 
 function clearActiveClasses() {
-  buttons.forEach(btn => btn.classList.remove('main__active'));
+  buttons.forEach(btn => btn.classList.remove('mainActive'));
   completedContent.classList.remove('active');
   ongoingContent.classList.remove('active');
   upcomingContent.classList.remove('active');
@@ -20,21 +20,21 @@ function clearActiveClasses() {
 completedBtn.addEventListener('click', (e) => {
   e.preventDefault();
   clearActiveClasses();
-  completedBtn.classList.add('main__active');
+  completedBtn.classList.add('mainActive');
   completedContent.classList.add('active');
 });
 
 ongoingBtn.addEventListener('click', (e) => {
   e.preventDefault();
   clearActiveClasses();
-  ongoingBtn.classList.add('main__active');
+  ongoingBtn.classList.add('mainActive');
   ongoingContent.classList.add('active');
 });
 
 upcomingBtn.addEventListener('click', (e) => {
   e.preventDefault();
   clearActiveClasses();
-  upcomingBtn.classList.add('main__active');
+  upcomingBtn.classList.add('mainActive');
   upcomingContent.classList.add('active');
 });
 
@@ -109,7 +109,7 @@ var options = {
   labels: [''],
 };
 
-var chart = new ApexCharts(document.querySelector("#donut-chart"), options);
+var chart = new ApexCharts(document.querySelector("#donutChart"), options);
 chart.render();
 
 // Bar chart
@@ -239,7 +239,7 @@ var options = {
   }
 };
 
-var chart = new ApexCharts(document.querySelector("#bar-chart"), options);
+var chart = new ApexCharts(document.querySelector("#barChart"), options);
 function _render(delay) {
   setTimeout(() => {
     chart.render();
