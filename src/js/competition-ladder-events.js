@@ -1,9 +1,9 @@
 function switchTab(tab) {
-    const standingSection = document.getElementById('clStanding');
-    const bracketSection = document.getElementById('clBracket');
+    const standingSection = document.getElementById('cl-standing');
+    const bracketSection = document.getElementById('cl-bracket');
 
-    const standingTab = document.getElementById('standingTabBtn');
-    const bracketingTab = document.getElementById('bracketingTabBtn');
+    const standingTab = document.getElementById('standing-tab-btn');
+    const bracketingTab = document.getElementById('bracketing-tab-btn');
 
     if (tab === 'standing') {
         standingSection.classList.remove('hide');
@@ -15,26 +15,26 @@ function switchTab(tab) {
         standingSection.classList.add('hide');
         bracketSection.classList.remove('hide');
 
-        standingTab.classList.remove('tabActive');
+        standingTab.classList.remove('tab-active');
         bracketingTab.classList.add('tabActive');
     }
 }
 
 function toggleDropdown() {
-    const dropDownContent = document.getElementById("clDropDownContent");
-    const dropDownBtn = document.getElementById("clDropDownBtn");
-    const dropDownChev = document.querySelector(".clDropdownChevDown");
+    const dropDownContent = document.getElementById("cl-drop-down-content");
+    const dropDownBtn = document.getElementById("cl-drop-down-btn");
+    const dropDownChev = document.querySelector(".cl-drop-down-chev-down");
 
     if (dropDownContent.classList.contains("hide")) {
         dropDownContent.classList.remove("hide");
         dropDownContent.classList.add("show");
-        dropDownBtn.setAttribute("ariaExpanded", "true");
+        dropDownBtn.setAttribute("aria-expanded", "true");
         dropDownChev.classList.add("rotate-feedback");
     } else {
         dropDownContent.classList.remove("show");
         dropDownContent.classList.add("hide");
-        dropDownBtn.setAttribute("ariaExpanded", "false");
-        dropDownChev.classList.remove("rotateFeedback");
+        dropDownBtn.setAttribute("aria-expanded", "false");
+        dropDownChev.classList.remove("rotate-feedback");
     }
 }
 
