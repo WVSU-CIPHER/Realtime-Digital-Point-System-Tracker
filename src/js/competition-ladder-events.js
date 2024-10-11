@@ -49,7 +49,7 @@ mobileEventItems.forEach(ei => {
     ei.addEventListener("click", (e) => {
         mobileEventItems.forEach(item => item.classList.remove("active"));
 
-        ei.classList.toggle("active");
+        ei.classList.toggle("active")
     })
 })
 
