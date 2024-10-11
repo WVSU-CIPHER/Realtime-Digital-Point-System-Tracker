@@ -1,0 +1,194 @@
+:root {
+    --dark-surface: #050402;
+    --event-bg-color: #ff9422;
+    --mobile-bg-for-glass: rgba(96, 75, 75, 0.22);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F48128;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #f48028a5;
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 0px;
+}
+
+.main--ranking{
+    display: flex;
+    flex-direction: column;
+}
+
+.main--subheading{
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 130%;
+    margin-bottom: 14px;
+}
+
+.main--event-status  a{
+    text-decoration: none;
+    padding: 10px;
+    line-height: 150%; 
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main--active{
+    color: var(--dark-surface);
+    background-color: var(--event-bg-color);
+    border-radius: 5px;
+}
+
+.event-container {
+    display: none;
+  } .event-container.active {
+    display: block;
+}
+
+.main--container-events{
+    max-height: 350px;
+    overflow-y: scroll;
+    border-top: 2px var(--event-bg-color) solid;
+    border-bottom: 2px var(--event-bg-color) solid;
+    margin-top: 16px;
+    padding: 2.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.875rem;
+    column-gap: 6.25rem;
+    justify-content: space-between;
+}
+
+.main--event-container--completed , .main--event-container--ongoing, .main--event-container--upcoming{
+    align-items: center;
+    max-width: 550px;
+    min-width: 330px;
+    height: 126px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    border-radius: 16px;
+    border: 2px solid var(--event-bg-color);
+    background: var(--mobile-bg-for-glass);
+    border-bottom: none;
+    backdrop-filter: blur(2px);
+}
+
+.main--event-container--completed p, .main--event-container--ongoing p, .main--event-container--upcoming p{
+    padding-top: 2px;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 150%; 
+}
+
+.main--match-info-container{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.mainmatch-info-container--upcoming{
+    width: 100%;
+    align-items:center;
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    font-size: 48px;
+    font-weight: 700;   
+}
+.main--event-upcoming-time{
+    color: #B2AAAA;
+} 
+
+.main--event-upcoming-time span{
+    font-size: 18px;
+    color: #B2AAAA;
+}
+
+.main--event-team,
+.main--event-team-reversed{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}.main--event-team--upcoming{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.0rem;
+    font-weight: 700;
+    color: #ffff;
+}.main--event-team--upcoming p{
+    font-size: 24px;
+}
+
+.main--event-team p,
+.main--event-team-reversed p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 130%; 
+}
+
+.main--event-score-container p{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+.main--event-score-container-upcoming p {
+    padding-top: 14px;
+    display: inline-flex;
+    align-self: center;
+    gap: 1rem;
+}
+
+.main--event-score-container p span {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 130%; 
+}
+
+.main--event-score-container p span:nth-child(2), .main--event-score-container-upcoming p span:nth-child(2){
+    background: #F48128;
+    width: 2px;
+    height: 46px;
+}
+
+.main--event-info-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0px 0px 16px 16px;
+    background: linear-gradient(180deg, var(--event-bg-color) 0%, #78481F 100%); 
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.main--event-info-container p{
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 150%; 
+}
+
+.main--event-info-container--upcoming p{
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 150%; 
+}
+#chart {
+    max-width: 500px;   /* Adjust to your desired max width */
+    margin: 0 auto;     /* Center the chart */
+  }

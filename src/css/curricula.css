@@ -1,0 +1,503 @@
+:root {
+    --border-color: #FF9422;
+    --border-accent-color: #F48128;
+    --bg-blur: rgba(19, 18, 18, 0.53);
+}
+
+/* PS. SORRY FOR THE INCONSISTENT CSS NAMING */
+
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.bg-test {
+    border: 1px solid var(--border-accent-color);
+    height: fit-content;
+    padding: 27px 18px 27px 18px;
+    overflow: hidden;
+}
+
+.dropdown-container {
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border-accent-color);
+    margin-bottom: 14px;
+}
+
+.dropdown {
+    position: relative;
+    width: 100%;
+    border: 0.5px solid var(--border-accent-color);
+}
+
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 18px;
+    font-size: 1.1rem;
+}
+
+.dropdown-header h2,
+.dropdown-header span {
+    color: var(--border-accent-color);
+}
+
+.hide-options {
+    display: none;
+}
+
+.select-options {
+    position: absolute;
+    width: 100%;
+    backdrop-filter: blur(16px);
+    background-color: rgba(0, 0, 0, 0.653);
+    margin-top: 1rem;
+    padding: 0 18px;
+
+}
+
+.options {
+    display: block;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    font-weight: 1rem;
+
+}
+
+
+.curriculum {
+    display: none;
+}
+
+.fundays-feats>h2 {
+    display: none;
+}
+
+.feats-body .current_batch {
+    border: 0.5px solid var(--border-accent-color);
+    height: 138px;
+}
+
+
+.current_batch,
+.batch-points {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current_batch,
+.batch-points {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.batch-points {
+    flex-direction: column;
+}
+
+.batch-points span:nth-child(1) {
+    height: 75%;
+    font-size: 48px;
+    font-weight: 800;
+    padding: 16px 0;
+    color: var(--border-accent-color);
+}
+
+
+.batch-points span:nth-child(2) {
+    height: 25%;
+}
+
+.current-batch .circle-img {
+    width: 100px;
+    height: 100px;
+    background-color: var(--border-accent-color);
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.current-batch h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.current-batch p,
+.batch-points span:nth-child(2) {
+    font-size: 10px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.current-batch p {
+    line-height: 200%;
+}
+
+.feats-body .batch-points {
+    border: 0.5px solid var(--border-accent-color);
+    height: 100px;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    margin-top: 33px;
+    border-radius: 15px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--border-accent-color);
+    overflow: hidden;
+
+}
+
+
+th {
+    background: rgba(244, 129, 40, 0.46);
+    height: 38px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 10px;
+    margin-bottom: 8px;
+}
+
+th:nth-child(1) {
+    text-align: left;
+}
+
+th:nth-child(2) {
+    text-align: center;
+}
+
+th:nth-child(3) {
+    text-align: right;
+}
+
+tbody {
+    background: rgba(244, 129, 40, 0.12);
+
+    display: block;
+    /* Ensures the tbody is treated as a block element */
+    height: 100%;
+    max-height: 300px;
+    /* 300 in sm, 250 in md up */
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+}
+
+/* Display the table headers as block too, so it aligns with tbody */
+thead,
+tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    /* Ensures proper alignment */
+}
+
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+tbody tr:first-child>td {
+    padding-top: 15px;
+}
+
+tr>td {
+    padding: 4px 25px;
+    /* Consistent horizontal padding with headers */
+    font-size: 1.2rem;
+}
+
+/* Align td elements to match the th alignment */
+td:nth-child(1) {
+    text-align: left;
+    padding: 4px 10px;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+td:nth-child(3) {
+    text-align: right;
+}
+
+/* Add padding to the bottom of the table */
+tbody tr:last-child>td {
+    /* padding-bottom: 30px; */
+    padding-bottom: 1.5rem;
+}
+
+/* Remove individual cell borders */
+th,
+td {
+    border: none;
+}
+
+/* ============================  Medium devices (landscape tablets, 768px and up) ===================================*/
+@media only screen and (min-width: 768px) {
+
+    th {
+        font-size: 18px;
+    }
+
+    tr>td {
+        padding: 4px 25px;
+        /* Consistent horizontal padding with headers */
+        font-size: 14px;
+    }
+
+    tbody {
+        max-height: 250px;
+
+    }
+
+    .feats-body .batch-points {
+        border: none;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .current-batch p,
+    .batch-points span:nth-child(2) {
+        color: white;
+    }
+
+    .current-batch .circle-img {
+        width: auto;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 25px;
+    }
+
+    .batch-points span:nth-child(2) {
+        height: auto;
+        text-align: center;
+        /* font-family: Lato; */
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .batch-points span:nth-child(1) {
+        height: auto;
+        color: var(--border-accent-color);
+        padding: 0;
+    }
+
+    .batch-points {
+        max-width: 226px;
+        margin-left: 14px;
+        height: 100%;
+    }
+
+    .current-batch h3 {
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .current-batch p {
+        font-size: 18px;
+        font-weight: 700;
+
+    }
+
+    .current-batch .circle-img {
+        width: 110px;
+        height: 110px;
+        margin-right: 14px;
+
+    }
+
+    .batch-points {
+        flex-direction: row;
+    }
+
+    .feats-body>div>.current-batch,
+    .feats-body>div>.batch-points {
+        border-radius: 16px;
+        height: 192px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        border: 1px solid var(--border-accent-color);
+    }
+
+
+    .batch-container p,
+    .current-batch p {
+        color: rgba(255, 255, 255, 0.57)
+    }
+
+    .fundays-feats {
+        width: 75%;
+    }
+
+    .fundays-feats>h2 {
+        padding-left: 18px;
+    }
+
+    .feats-body {
+        margin-left: 11px;
+        padding: 45px 23px 0 23px;
+    }
+
+    .batch-container>div>span {
+        font-size: 14px;
+        font-weight: 400px;
+    }
+
+    .batch-container p,
+    .current-batch p {
+        color: rgba(255, 255, 255, 0.57)
+    }
+
+
+    .batch-container {
+        width: 100%;
+        max-width: 275px;
+        padding: 16px 0;
+        opacity: 0.45;
+    }
+
+
+
+    .batch-container>.circle-img {
+        margin-right: 8px;
+    }
+
+    .batch-container>div>h3 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+
+    aside {
+        align-items: center;
+        padding: 13px 16px 0 16px;
+        /*top right bottom left*/
+        margin-right: 11px;
+    }
+
+
+    .curriculum>aside>section {
+        cursor: pointer;
+    }
+
+    .selected--active {
+        border-right: 4px solid var(--border-color);
+        opacity: 1;
+    }
+
+    .batch-container.selected--active {
+        opacity: 1;
+        /* Set opacity to 1 when selected */
+    }
+
+    .circle-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--border-accent-color);
+    }
+
+    .curriculum>aside,
+    .fundays-feats>div {
+        border: 1px solid var(--border-accent-color);
+        margin-top: 11px;
+        flex-grow: 1;
+        backdrop-filter: blur(9px);
+    }
+
+
+    .feats-body .current_batch {
+        border: none;
+        height: auto;
+    }
+
+
+    .curriculum>h2,
+    .fundays-feats>h2 {
+        border-bottom: 1px solid var(--border-accent-color);
+        padding-bottom: 14px;
+        display: block;
+    }
+
+    .curriculum {
+        display: block;
+        border-right: 1px solid var(--border-accent-color);
+        width: 25%;
+        max-width: 326px;
+    }
+
+    .bg-test {
+
+        /*TODO: for testing only; set to fit later */
+        height: 80vh;
+        padding: 0;
+        border: none;
+    }
+
+    h1 {
+        margin-bottom: 33px;
+    }
+
+    .dropdown-container {
+        display: none;
+    }
+
+    .flex {
+        display: flex;
+
+    }
+
+    .flex-direct {
+        flex-direction: column;
+    }
+
+
+
+}
+
+/* ===========================  Large devices (laptops/desktops, 1200px and up) ============================================ */
+@media only screen and (min-width: 1200px) {
+
+    .current-batch h3 {
+        font-size: 32px;
+
+    }
+
+    .circle-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .batch-container>.circle-img {
+        margin-right: 12px;
+    }
+
+    .current-batch .circle-img {
+        width: 132px;
+        height: 132px;
+        margin-right: 18.5px;
+
+    }
+
+    aside {
+        align-items: center;
+        padding: 13px 23px 0 23px;
+        /*top right bottom left*/
+        margin-right: 11px;
+    }
+
+    .batch-container>div>h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}

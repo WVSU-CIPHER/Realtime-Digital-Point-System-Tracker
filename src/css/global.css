@@ -1,73 +1,207 @@
+@font-face {
+  font-family: "Oxanium";
+  src: url("../fonts/Oxanium/Oxanium-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+  --highlight-color: #ff9422;
+  --text-color: #fff;
+  --bg-color: #050402;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--text-color);
+  font-family: "Oxanium";
+  text-decoration: none;
 }
 
-@font-face {
-  font-family: "Oxanium";
-  src: url("../public/fonts/Oxanium/Oxanium-VariableFont_wght.ttf")
-    format("truetype");
+html {
+  font-size: 16px;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 3.75rem 10% 3.75rem;
+  width: 100%;
+}
+
 body {
-  background-color: #050402;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  overflow-x: hidden;
 }
+
 .bg-image {
   position: absolute;
-  top: 0;
-  right: 0;
-  left: -100px;
-  width: 120%;
-  height: 120%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  z-index: -1;
 }
+
 .nav-bar {
-  position: fixed;
   display: flex;
+  /* position: fixed;
+  top: 0; */
   justify-content: space-between;
   flex-direction: row;
-  height: 74px;
+  max-height: 74px;
   width: 100%;
-  background-color: #050402;
+  padding: 10px 10% 0;
+  z-index: 1;
 }
+
 .logo {
   display: flex;
   flex-direction: row;
-  font-family: "Oxanium";
-  font: weight 800px;
-  font-size: 32px;
-  padding-top: 10px;
-  padding-left: 128px;
+  font-weight: 800;
+  font-size: 2rem;
   gap: 8px;
+  align-items: center;
 }
-.heading {
-  color: #ff9422;
+
+.heading,
+nav a.active {
+  color: var(--highlight-color);
 }
+
+nav a:hover {
+  color: var(--highlight-color);
+}
+
+.bottom-nav a.active p {
+  color: #f48128;
+}
+
 .sub-heading {
-  padding-top: 18px;
-  color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
-.navbar-link {
+
+nav{
   display: flex;
-  padding-top: 28px;
-  gap: 64px;
-  font-family: "Oxanium";
-  font-size: 18px;
+  align-items: center;
+  gap: 4rem;
+  font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
-  padding-right: 128px;
 }
-.navbar-link-home {
-  text-decoration: none;
-  color: #ff9422;
+
+.bottom-nav {
+  display: none;
 }
-.navbar-link-competition {
-  color: white;
-  text-decoration: none;
+
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 15px;
+  }
 }
-.navbar-link-curricula {
-  color: white;
-  text-decoration: none;
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+
+  .main--container-events {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 4rem;
+  }
+
+  .main--event-container--completed {
+    max-width: none;
+    width: inherit;
+    height: 120%;
+  }
+
+  .main--match-info-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20%;
+  }
+  .main--event-info-container {
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+
+  .main--match-info-container {
+    padding: 0 10%;
+  }
+
+  .nav-bar {
+    padding: 10px 2rem 0;
+    position: relative;
+  }
+
+  main {
+    padding: 3.75rem 2rem 3.75rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    padding-bottom: 100px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .bottom-nav {
+    display: flex;
+    /* justify-self: flex-end; */
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    /* margin-top: 20px; */
+    padding: 1rem;
+    background: rgba(82, 82, 82, 0.23);
+    backdrop-filter: blur(10px);
+  }
+
+  .bottom-nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main--match-info-container {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 10px;
+  }
 }
