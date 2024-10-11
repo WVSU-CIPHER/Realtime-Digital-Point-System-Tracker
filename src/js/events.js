@@ -17,21 +17,21 @@ function clearActiveClasses() {
   upcomingContent.classList.remove('active');
 }
 
-completedBtn.addEventListener('click', function (e) {
+completedBtn.addEventListener('click', (e) => {
   e.preventDefault();
   clearActiveClasses();
   completedBtn.classList.add('main__active');
   completedContent.classList.add('active');
 });
 
-ongoingBtn.addEventListener('click', function (e) {
+ongoingBtn.addEventListener('click', (e) => {
   e.preventDefault();
   clearActiveClasses();
   ongoingBtn.classList.add('main__active');
   ongoingContent.classList.add('active');
 });
 
-upcomingBtn.addEventListener('click', function (e) {
+upcomingBtn.addEventListener('click', (e) => {
   e.preventDefault();
   clearActiveClasses();
   upcomingBtn.classList.add('main__active');
@@ -39,7 +39,7 @@ upcomingBtn.addEventListener('click', function (e) {
 });
 
 // Donut Chart 
-var percentageValue = 50; // Fundays progress bar
+let percentageValue = 50; // Fundays progress bar
 
 var options = {
   series: [percentageValue],
@@ -113,13 +113,13 @@ var chart = new ApexCharts(document.querySelector("#donut-chart"), options);
 chart.render();
 
 // Bar chart
-var teamNames = ['Radeon', 'Nexus', 'Ryzen', 'Oracle'];
+let teamNames = ['Radeon', 'Nexus', 'Ryzen', 'Oracle'];
 
-var originalData = [10, 2, 5, 12];
+let originalData = [10, 2, 5, 12];
 
-var randomMultiplier = Math.floor(Math.random() * 10) + 1;
+let randomMultiplier = Math.floor(Math.random() * 10) + 1;
 
-var chartData = originalData.map(value => value * randomMultiplier);
+let chartData = originalData.map(value => value * randomMultiplier);
 
 var options = {
   series: [{
