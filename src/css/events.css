@@ -17,19 +17,19 @@
     height: 0px;
 }
 
-.main__ranking{
+.main--ranking{
     display: flex;
     flex-direction: column;
 }
 
-.main__subheading{
+.main--subheading{
     font-size: 2rem;
     font-weight: 800;
     line-height: 130%;
     margin-bottom: 14px;
 }
 
-.main__event-status  a{
+.main--event-status  a{
     text-decoration: none;
     padding: 10px;
     line-height: 150%; 
@@ -38,7 +38,7 @@
     text-align: center;
 }
 
-.main__active{
+.main--active{
     color: var(--dark-surface);
     background-color: var(--event-bg-color);
     border-radius: 5px;
@@ -50,7 +50,7 @@
     display: block;
 }
 
-.main__container-events{
+.main--container-events{
     max-height: 350px;
     overflow-y: scroll;
     border-top: 2px var(--event-bg-color) solid;
@@ -64,7 +64,7 @@
     justify-content: space-between;
 }
 
-.main__event-container--completed , .main__event-container--ongoing, .main__event-container--upcoming{
+.main--event-container--completed , .main--event-container--ongoing, .main--event-container--upcoming{
     align-items: center;
     max-width: 550px;
     min-width: 330px;
@@ -80,7 +80,7 @@
     backdrop-filter: blur(2px);
 }
 
-.main__event-container--completed p, .main__event-container--ongoing p, .main__event-container--upcoming p{
+.main--event-container--completed p, .main--event-container--ongoing p, .main--event-container--upcoming p{
     padding-top: 2px;
     text-align: center;
     font-size: 1.125rem;
@@ -88,7 +88,7 @@
     line-height: 150%; 
 }
 
-.main__match-info-container{
+.main--match-info-container{
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -97,7 +97,7 @@
     gap: 1.5rem;
 }
 
-.main__match-info-container--upcoming{
+.mainmatch-info-container--upcoming{
     width: 100%;
     align-items:center;
     justify-content:center;
@@ -106,64 +106,64 @@
     font-size: 48px;
     font-weight: 700;   
 }
-.main__event-upcoming-time{
+.main--event-upcoming-time{
     color: #B2AAAA;
 } .main__event-upcoming-time span{
     font-size: 18px;
     color: #B2AAAA;
 }
 
-.main__event-team,
-.main__event-team-reversed{
+.main--event-team,
+.main--event-team-reversed{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1.5rem;
-}.main__event-team--upcoming{
+}.main--event-team--upcoming{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1.0rem;
     font-weight: 700;
     color: #ffff;
-}.main__event-team--upcoming p{
+}.main--event-team--upcoming p{
     font-size: 24px;
 }
 
-.main__event-team p,
-.main__event-team-reversed p {
+.main--event-team p,
+.main--event-team-reversed p {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 130%; 
 }
 
-.main__event-score-container p{
+.main--event-score-container p{
     display: inline-flex;
     align-items: center;
     gap: 1rem;
 }
-.main__event-score-container-upcoming p {
+.main--event-score-container-upcoming p {
     padding-top: 14px;
     display: inline-flex;
     align-self: center;
     gap: 1rem;
 }
 
-.main__event-score-container p span {
+.main--event-score-container p span {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 130%; 
 }
 
-.main__event-score-container p span:nth-child(2), .main__event-score-container-upcoming p span:nth-child(2){
+.main--event-score-container p span:nth-child(2), .main--event-score-container-upcoming p span:nth-child(2){
     background: #F48128;
     width: 2px;
     height: 46px;
 }
 
-.main__event-info-container{
+.main--event-info-container{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -173,14 +173,14 @@
     padding: 0 15px;
 }
 
-.main__event-info-container p{
+.main--event-info-container p{
     text-align: center;
     font-size: 1.125rem;
     font-weight: 700;
     line-height: 150%; 
 }
 
-.main__event-info-container--upcoming p{
+.main--event-info-container--upcoming p{
     text-align: center;
     font-size: 0.875rem;
     font-weight: 700;
