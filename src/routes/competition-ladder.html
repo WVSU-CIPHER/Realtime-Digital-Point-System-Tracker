@@ -21,7 +21,9 @@
       </div>
       <nav>
         <a href="../routes/home.html">Home</a>
-        <a class="active" href="../routes/competition-ladder.html">Competition Ladder</a>
+        <a class="active" href="../routes/competition-ladder.html"
+          >Competition Ladder</a
+        >
         <a href="../routes/curricula.html">Curricula</a>
       </nav>
     </nav>
@@ -42,7 +44,7 @@
           <img src="../images/volleyballorg 2.svg" alt="drop-down-icon" />
           <p class="cl__drop-down-label">volleyball</p>
         </div>
-        <span class="rotate-feedback cl__drop-down-chev-down">
+        <span class="cl__drop-down-chev-down">
           <img src="../images/down-arrow 25.svg" alt="drop-down-arrow-down" />
         </span>
 
@@ -133,27 +135,31 @@
         <!-- PARENT CONTAINER FOR COLUMN 2 -->
         <section class="cl__col-2">
           <!-- INTERACTIVE TABS -->
-          <div class="col-2__head-title">
+          <nav class="col-2__head-title">
             <h1
               id="standing-tab-btn"
-              class="standing-tab tab-btn"
+              class="standing-tab tab-btn standing tab"
               onclick="switchTab('standing')"
             >
               Standings
             </h1>
             <h1
               id="bracketing-tab-btn"
-              class="bracketing-tab tab-btn tab-active"
+              class="bracketing-tab tab-btn tab-active tab bracketing"
               onclick="switchTab('bracketing')"
             >
               Bracketing
             </h1>
-          </div>
+          </nav>
+
           <section class="cl__col-content-container">
-            <div class="cl__col-content-sub-container">
+            <div class="cl__col-content-sub-container container">
               <!-- CONTENT [STANDINGS] -->
               <!-- You may use the .hide class to either display or not the sections that are representing the contest standing and brackets -->
-              <section id="cl__standing" class="cl__standing-content hide">
+              <section
+                id="cl__standing"
+                class="cl__standing-content standing hide"
+              >
                 <!-- TABLE TITLES -->
                 <section class="standing-head-titles">
                   <div>
@@ -200,7 +206,7 @@
               </section>
 
               <!-- CONTENT  [BRACKETS] -->
-              <section id="cl__bracket" class="cl__bracket-content">
+              <section id="cl__bracket" class="cl__bracket-content bracketing">
                 <!-- FIRST FOR BRACKETS -->
                 <div class="bracket-container">
                   <article class="elimination-round">
@@ -323,5 +329,7 @@
   </body>
 
   <!-- events for competition ladder -->
-  <script type="module" src="../js/competition-ladder-events.js"></script>
+  <script src="../js/competition-ladder-events.js"></script>
+  // Removed the type="module" it conflicts with the js
+  (competition-ladder-event.js) script
 </html>
