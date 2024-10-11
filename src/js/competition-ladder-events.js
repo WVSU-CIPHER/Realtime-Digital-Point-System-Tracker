@@ -28,4 +28,31 @@ function toggleDropdown() {
     dropDownChev.classList.toggle("rotate-feedback", isHidden);
 };
 
+
+
+const desktopEventItems = document.querySelectorAll(".cl__event-item");
+
+desktopEventItems.forEach((ei) => {
+
+    ei.addEventListener("click", (e) => {
+        // Remove 'active' class from all event items
+        desktopEventItems.forEach(item => item.classList.remove("active"));
+        // Add 'active' class for selected item
+        ei.classList.toggle("active");
+
+    })
+}
+);
+
+const mobileEventItems = document.querySelectorAll(".cl__drop-down-content-item")
+mobileEventItems.forEach(ei => {
+    ei.addEventListener("click", (e) => {
+        mobileEventItems.forEach(item => item.classList.remove("active"));
+
+        ei.classList.toggle("active");
+    })
+})
+
+
+
 document.getElementById("cl__drop-down-btn").addEventListener("click", toggleDropdown);

@@ -50,21 +50,17 @@
 
         <!-- Dropdown content -->
         <div class="cl__drop-down-content hide" id="cl__drop-down-content">
-          <p class="cl__drop-down-content-item">item</p>
-          <p class="cl__drop-down-content-item">item</p>
-          <p class="cl__drop-down-content-item">item</p>
-          <p class="cl__drop-down-content-item">item</p>
-          <p class="cl__drop-down-content-item">item</p>
-          <p class="cl__drop-down-content-item">item</p>
-          <p class="cl__drop-down-content-item">item</p>
-          <p class="cl__drop-down-content-item">item</p>
-          <p class="cl__drop-down-content-item">item</p>
-          <p class="cl__drop-down-content-item">item</p>
-          <p class="cl__drop-down-content-item">item</p>
-          <p class="cl__drop-down-content-item">item</p>
-          <p class="cl__drop-down-content-item">item</p>
-          <p class="cl__drop-down-content-item">item</p>
-          <p class="cl__drop-down-content-item">item</p>
+          <p class="cl__drop-down-content-item active">volleyball</p>
+          <p class="cl__drop-down-content-item">basketball</p>
+          <p class="cl__drop-down-content-item">basketball</p>
+          <p class="cl__drop-down-content-item">basketball</p>
+          <p class="cl__drop-down-content-item">basketball</p>
+          <p class="cl__drop-down-content-item">basketball</p>
+          <p class="cl__drop-down-content-item">basketball</p>
+          <p class="cl__drop-down-content-item">volleyball</p>
+          <p class="cl__drop-down-content-item">volleyball</p>
+          <p class="cl__drop-down-content-item">volleyball</p>
+          <p class="cl__drop-down-content-item">volleyball</p>
         </div>
       </section>
 
@@ -83,6 +79,51 @@
             <!-- SCROLLABLE ASIDE BAR -->
             <section class="cl__scrollable">
               <!-- SCROLL ITEMS  -->
+              <section class="cl__event-item active">
+                <!-- circle element -->
+                <div class="cl__event-circle-element"></div>
+
+                <!-- title and sport categ -->
+                <div class="cl__event-meta">
+                  <h1 class="cl__event-name">volleyball</h1>
+                  <!-- sport categ -->
+                  <div class="sport-category-info">
+                    <p class="sports__p">sports</p>
+                    <span class="meta-bullet">•</span>
+                    <p class="event-category">men category</p>
+                  </div>
+                </div>
+              </section>
+              <section class="cl__event-item">
+                <!-- circle element -->
+                <div class="cl__event-circle-element"></div>
+
+                <!-- title and sport categ -->
+                <div class="cl__event-meta">
+                  <h1 class="cl__event-name">volleyball</h1>
+                  <!-- sport categ -->
+                  <div class="sport-category-info">
+                    <p class="sports__p">sports</p>
+                    <span class="meta-bullet">•</span>
+                    <p class="event-category">men category</p>
+                  </div>
+                </div>
+              </section>
+              <section class="cl__event-item">
+                <!-- circle element -->
+                <div class="cl__event-circle-element"></div>
+
+                <!-- title and sport categ -->
+                <div class="cl__event-meta">
+                  <h1 class="cl__event-name">volleyball</h1>
+                  <!-- sport categ -->
+                  <div class="sport-category-info">
+                    <p class="sports__p">sports</p>
+                    <span class="meta-bullet">•</span>
+                    <p class="event-category">men category</p>
+                  </div>
+                </div>
+              </section>
               <section class="cl__event-item">
                 <!-- circle element -->
                 <div class="cl__event-circle-element"></div>
@@ -161,48 +202,37 @@
                 class="cl__standing-content standing hide"
               >
                 <!-- TABLE TITLES -->
-                <section class="standing-head-titles">
-                  <div>
-                    <h2>rank</h2>
-                    <h2>batch name</h2>
-                  </div>
-                  <h1 class="standing-team-points">points</h1>
-                </section>
-
-                <!-- STANDING HEIRARCHY -->
-                <section class="standing-ranking">
-                  <!-- FIRST ROW -->
-                  <article class="standing-ranking-content">
-                    <div class="standing-ranking-row">
-                      <div class="standing-batch-name-rank">
-                        <h1 class="rank-1">#1</h1>
-                        <h1 class="rank-1-team">batch ryzen</h1>
-                      </div>
-                      <h1 class="rank-1-points">?</h1>
-                    </div>
-                    <div class="standing-ranking-row">
-                      <div class="standing-batch-name-rank">
-                        <h1 class="rank-2">#1</h1>
-                        <h1 class="rank-2-team">batch ryzen</h1>
-                      </div>
-                      <h1 class="rank-2-points">?</h1>
-                    </div>
-                    <div class="standing-ranking-row">
-                      <div class="standing-batch-name-rank">
-                        <h1 class="rank-3">#1</h1>
-                        <h1 class="rank-3-team">batch ryzen</h1>
-                      </div>
-                      <h1 class="rank-3-points">?</h1>
-                    </div>
-                    <div class="standing-ranking-row">
-                      <div class="standing-batch-name-rank">
-                        <h1 class="rank-4">#1</h1>
-                        <h1 class="rank-4-team">batch ryzen</h1>
-                      </div>
-                      <h1 class="rank-4-points">?</h1>
-                    </div>
-                  </article>
-                </section>
+                <table class="standing-table">
+                  <thead>
+                    <tr>
+                      <th class="rank">Rank</th>
+                      <th class="batch">Batch</th>
+                      <th class="points">Points</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="rank">#1</td>
+                      <td class="batch">Nexus</td>
+                      <td class="points">?</td>
+                    </tr>
+                    <tr>
+                      <td class="rank">#2</td>
+                      <td class="batch">Nexus</td>
+                      <td class="points">?</td>
+                    </tr>
+                    <tr>
+                      <td class="rank">#3</td>
+                      <td class="batch">Nexus</td>
+                      <td class="points">?</td>
+                    </tr>
+                    <tr>
+                      <td class="rank">#4</td>
+                      <td class="batch">Nexus</td>
+                      <td class="points">?</td>
+                    </tr>
+                  </tbody>
+                </table>
               </section>
 
               <!-- CONTENT  [BRACKETS] -->
@@ -330,6 +360,6 @@
 
   <!-- events for competition ladder -->
   <script src="../js/competition-ladder-events.js"></script>
-  // Removed the type="module" it conflicts with the js
-  (competition-ladder-event.js) script
+  <!--Removed the type="module" it conflicts with the js
+  (competition-ladder-event.js) script -->
 </html>
