@@ -108,7 +108,9 @@
 }
 .main--event-upcoming-time{
     color: #B2AAAA;
-} .main__event-upcoming-time span{
+} 
+
+.main--event-upcoming-time span{
     font-size: 18px;
     color: #B2AAAA;
 }
