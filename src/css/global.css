@@ -67,15 +67,15 @@ body {
 }
 
 .heading,
-.navbar-link--active {
+nav a.active {
   color: var(--highlight-color);
 }
 
-.navbar-link:hover {
+nav a:hover {
   color: var(--highlight-color);
 }
 
-.bottom-nav__link--active p {
+.bottom-nav a.active p {
   color: #f48128;
 }
 
@@ -83,7 +83,7 @@ body {
   font-size: 1.125rem;
 }
 
-.navbar-link {
+nav{
   display: flex;
   align-items: center;
   gap: 4rem;
@@ -161,7 +161,7 @@ body {
     padding-bottom: 100px;
   }
 
-  .navbar-link {
+  nav {
     display: none;
   }
 
@@ -178,7 +178,7 @@ body {
     backdrop-filter: blur(10px);
   }
 
-  .bottom-nav__link {
+  .bottom-nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
