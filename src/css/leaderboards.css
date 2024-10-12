@@ -4,7 +4,7 @@
     --bg-blur: rgba(19, 18, 18, 0.53);
 }
 
-.main--leaderboards{
+.main__leaderboards{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -14,7 +14,7 @@
     margin-bottom: 2.25rem;
 }
 
-.main--ranking{
+.main__ranking{
     display: flex;
     border-radius: 16px;
     border: 1px solid var(--border-color);
@@ -25,18 +25,18 @@
     padding: 1.25rem;
 }
 
-.main--subheading{
+.main__subheading{
     margin: 10px;
 }
 
-.main--progress{
+.main__progress{
     /* padding: 4px; */
     /* margin: 10px; */
     max-width: 426.949px;
     width: 100%;
 }
 
-.progress--points{
+.progress__points{
     border: 1px solid var(--border-color);
     border-radius: 16px;
     width: 100%;
@@ -54,7 +54,7 @@
     padding: 2.5rem 1.25rem 1.25rem;
 }
 
-.point--total{
+.points__total{
     color: var(--border-accent-color);
     text-align: center;
     font-size: 3rem;
@@ -64,7 +64,7 @@
     display: inline-flex;
 }
 
-.points--total span {
+.points__total span {
     text-transform: uppercase;
     color: var(--border-accent-color);
     font-size: 1.25rem;
@@ -73,7 +73,7 @@
 }
 
 
-.points--text{
+.points__text{
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
@@ -81,7 +81,7 @@
     letter-spacing: 0.5px;
 }
 
-.days--text {
+.days__text {
     font-size: 1rem;
     font-weight: 600;
     line-height: 150%; /* 21px */
@@ -89,7 +89,7 @@
     text-align: center;
 }
 
-.progress--remaining{
+.progress__remaining{
     /* height: 209px; */
     display: flex;
     border-radius: 16px;
@@ -100,15 +100,15 @@
     /* margin-bottom: 50px; */
 }
 
-.college--fundays--progress{
+.college__fundays__progress{
     /* margin: 10px; */
     font-size: 1rem;
     font-weight: 400;
     line-height: 150%; /* 21px */
 }
 
-.remaining--percentage,
-.remaining--days {
+.remaining__percentage,
+.remaining__days {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -117,11 +117,11 @@
     text-align: center;
 }
 
-.remaining--percentage{
+.remaining__percentage{
     justify-content: flex-start;
 }
 
-.percentage--text {
+.percentage__text {
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
@@ -129,7 +129,7 @@
     letter-spacing: 0.5px;
 }
 
-.remaining--days span{
+.remaining__days span{
     color: var(--border-accent-color);
     text-align: center;
     font-size: 8rem;
@@ -138,26 +138,26 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .main--leaderboards {
+    .main__leaderboards {
         flex-direction: column;
     }
 
-    .main--ranking {
+    .main__ranking {
         flex-direction: column;
     }
 
-    .main--progress {
+    .main__progress {
         display: flex;
         gap: 20px;
         max-width: none;
         flex-direction: row;
     }
 
-    .progress--remaining {
+    .progress__remaining {
         width: 70%;
     }   
 
-    .progress--points {
+    .progress__points {
         margin-bottom: 0;
         display: flex;
         width: 30%;
@@ -168,19 +168,19 @@
         flex-direction: column-reverse;
     }
 
-    .points--total {
+    .points__total {
         font-size: 5rem;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .points--total {
+    .points__total {
         display: inline-flex;
         flex-direction: column;
         
     }
 
-    .points--total span {
+    .points__total span {
         display: flex;
         justify-content: center;
         line-height: 80%;
@@ -191,30 +191,30 @@
 }
 
 @media screen and (max-width: 600px) {
-    .points--total {
+    .points__total {
         font-size: 3rem;
     }
 
-    .points--text, 
-    .percentage--text,
-    .days--text {
+    .points__text, 
+    .percentage__text,
+    .days__text {
         font-size: 12px;
     }
 
-    .remaining--days span {
+    .remaining__days span {
         font-size: 6rem;
     }
 }
 
 @media screen and (max-width: 500px) {
 
-    .points--text, 
-    .percentage--text,
-    .days--text {
+    .points__text, 
+    .percentage__text,
+    .days__text {
         font-size: 8px;
     }
 
-    .remaining--days span {
+    .remaining__days span {
         font-size: 4rem;
     }
 }

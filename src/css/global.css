@@ -108,24 +108,24 @@ nav{
     font-size: 14px;
   }
 
-  .main--container-events {
+  .main__container-events {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 4rem;
   }
 
-  .main--event-container--completed {
+  .main__event-container--completed {
     max-width: none;
     width: inherit;
     height: 120%;
   }
 
-  .main--match-info-container {
+  .main__match-info-container {
     width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 0 20%;
   }
-  .main--event-info-container {
+  .main__event-info-container {
     justify-content: space-between;
     align-items: center;
     height: 20%;
@@ -143,7 +143,7 @@ nav{
     font-size: 12px;
   }
 
-  .main--match-info-container {
+  .main__match-info-container {
     padding: 0 10%;
   }
 
@@ -190,7 +190,7 @@ nav{
 }
 
 @media screen and (max-width: 600px) {
-  .main--match-info-container {
+  .main__match-info-container {
     padding: 0 5%;
   }
 }

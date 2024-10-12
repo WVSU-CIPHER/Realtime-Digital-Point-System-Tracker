@@ -16,9 +16,9 @@ function switchTab(tab) {
 
 // Toggle the dropdown visibility and rotate the chevron
 function toggleDropdown() {
-    const dropDownContent = document.getElementById("cl--drop-down-content");
-    const dropDownBtn = document.getElementById("cl--drop-down-btn");
-    const dropDownChev = document.querySelector(".cl--drop-down-chev-down");
+    const dropDownContent = document.getElementById("cl__drop-down-content");
+    const dropDownBtn = document.getElementById("cl__drop-down-btn");
+    const dropDownChev = document.querySelector(".cl__drop-down-chev-down");
 
     const isHidden = dropDownContent.classList.contains("hide");
 
@@ -55,4 +55,4 @@ mobileEventItems.forEach(ei => {
 
 
 
-document.getElementById("cl--drop-down-btn").addEventListener("click", toggleDropdown);
+document.getElementById("cl__drop-down-btn").addEventListener("click", toggleDropdown);

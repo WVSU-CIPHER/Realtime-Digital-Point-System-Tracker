@@ -113,7 +113,7 @@ h1 {
     height: 25%;
 }
 
-.current-batch .circle-img {
+.current_batch .circle-img {
     width: 100px;
     height: 100px;
     background-color: var(--border-accent-color);
@@ -121,19 +121,19 @@ h1 {
     margin-right: 25px;
 }
 
-.current-batch h3 {
+.current_batch h3 {
     font-size: 20px;
     font-weight: 800;
 }
 
-.current-batch p,
+.current_batch p,
 .batch-points span:nth-child(2) {
     font-size: 10px;
     font-weight: 800;
     color: rgba(255, 255, 255, 0.60);
 }
 
-.current-batch p {
+.current_batch p {
     line-height: 200%;
 }
 
@@ -264,12 +264,12 @@ td {
         margin-top: 0;
     }
 
-    .current-batch p,
+    .current_batch p,
     .batch-points span:nth-child(2) {
         color: white;
     }
 
-    .current-batch .circle-img {
+    .current_batch .circle-img {
         width: auto;
         height: auto;
         border-radius: 50%;
@@ -296,18 +296,18 @@ td {
         height: 100%;
     }
 
-    .current-batch h3 {
+    .current_batch h3 {
         font-size: 24px;
         font-weight: 800;
     }
 
-    .current-batch p {
+    .current_batch p {
         font-size: 18px;
         font-weight: 700;
 
     }
 
-    .current-batch .circle-img {
+    .current_batch .circle-img {
         width: 110px;
         height: 110px;
         margin-right: 14px;
@@ -318,7 +318,7 @@ td {
         flex-direction: row;
     }
 
-    .feats-body>div>.current-batch,
+    .feats-body>div>.current_batch,
     .feats-body>div>.batch-points {
         border-radius: 16px;
         height: 192px;
@@ -331,7 +331,7 @@ td {
 
 
     .batch-container p,
-    .current-batch p {
+    .current_batch p {
         color: rgba(255, 255, 255, 0.57)
     }
 
@@ -354,7 +354,7 @@ td {
     }
 
     .batch-container p,
-    .current-batch p {
+    .current_batch p {
         color: rgba(255, 255, 255, 0.57)
     }
 
@@ -390,12 +390,12 @@ td {
         cursor: pointer;
     }
 
-    .selected--active {
+    .selected__active {
         border-right: 4px solid var(--border-color);
         opacity: 1;
     }
 
-    .batch-container.selected--active {
+    .batch-container.selected__active {
         opacity: 1;
         /* Set opacity to 1 when selected */
     }
@@ -468,7 +468,7 @@ td {
 /* ===========================  Large devices (laptops/desktops, 1200px and up) ============================================ */
 @media only screen and (min-width: 1200px) {
 
-    .current-batch h3 {
+    .current_batch h3 {
         font-size: 32px;
 
     }
@@ -482,7 +482,7 @@ td {
         margin-right: 12px;
     }
 
-    .current-batch .circle-img {
+    .current_batch .circle-img {
         width: 132px;
         height: 132px;
         margin-right: 18.5px;

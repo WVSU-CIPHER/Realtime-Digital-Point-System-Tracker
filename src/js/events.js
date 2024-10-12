@@ -10,10 +10,10 @@ const ongoingContent = document.getElementById('ongoing-events');
 const upcomingContent = document.getElementById('upcoming-events');
 
 
-const buttons = document.querySelectorAll('.main--event-status a');
+const buttons = document.querySelectorAll('.main__event-status a');
 
 function clearActiveClasses() {
-  buttons.forEach(btn => btn.classList.remove('main--active'));
+  buttons.forEach(btn => btn.classList.remove('main__active'));
   completedContent.classList.remove('active');
   ongoingContent.classList.remove('active');
   upcomingContent.classList.remove('active');
@@ -22,21 +22,21 @@ function clearActiveClasses() {
 completedBtn.addEventListener('click', (e) => {
   e.preventDefault();
   clearActiveClasses();
-  completedBtn.classList.add('main--active');
+  completedBtn.classList.add('main__active');
   completedContent.classList.add('active');
 });
 
 ongoingBtn.addEventListener('click', (e) => {
   e.preventDefault();
   clearActiveClasses();
-  ongoingBtn.classList.add('main--active');
+  ongoingBtn.classList.add('main__active');
   ongoingContent.classList.add('active');
 });
 
 upcomingBtn.addEventListener('click', (e) => {
   e.preventDefault();
   clearActiveClasses();
-  upcomingBtn.classList.add('main--active');
+  upcomingBtn.classList.add('main__active');
   upcomingContent.classList.add('active');
 });
 
@@ -111,7 +111,7 @@ var options = {
   labels: [''],
 };
 
-var chart = new ApexCharts(document.querySelector("#donutChart"), options);
+var chart = new ApexCharts(document.querySelector("#donut-chart"), options);
 chart.render();
 
 // Bar chart
@@ -241,7 +241,7 @@ var options = {
   }
 };
 
-var chart = new ApexCharts(document.querySelector("#barChart"), options);
+var chart = new ApexCharts(document.querySelector("#bar-chart"), options);
 function _render(delay) {
   setTimeout(() => {
     chart.render();
