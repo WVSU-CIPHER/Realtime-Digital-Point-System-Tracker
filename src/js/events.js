@@ -1,17 +1,19 @@
+
+
 // Active events
-const completedBtn = document.getElementById('btnCompleted');
-const ongoingBtn = document.getElementById('btnOngoing');
+const completedBtn = document.getElementById('btn-completed');
+const ongoingBtn = document.getElementById('btn-ongoing');
 const upcomingBtn = document.getElementById('btn-upcoming');
 
-const completedContent = document.getElementById('completedEvents');
-const ongoingContent = document.getElementById('ongoingEvents');
-const upcomingContent = document.getElementById('upcomingEvents');
+const completedContent = document.getElementById('completed-events');
+const ongoingContent = document.getElementById('ongoing-events');
+const upcomingContent = document.getElementById('upcoming-events');
 
 
-const buttons = document.querySelectorAll('.mainEventStatus a');
+const buttons = document.querySelectorAll('.main--event-status a');
 
 function clearActiveClasses() {
-  buttons.forEach(btn => btn.classList.remove('mainActive'));
+  buttons.forEach(btn => btn.classList.remove('main--active'));
   completedContent.classList.remove('active');
   ongoingContent.classList.remove('active');
   upcomingContent.classList.remove('active');
@@ -20,21 +22,21 @@ function clearActiveClasses() {
 completedBtn.addEventListener('click', (e) => {
   e.preventDefault();
   clearActiveClasses();
-  completedBtn.classList.add('mainActive');
+  completedBtn.classList.add('main--active');
   completedContent.classList.add('active');
 });
 
 ongoingBtn.addEventListener('click', (e) => {
   e.preventDefault();
   clearActiveClasses();
-  ongoingBtn.classList.add('mainActive');
+  ongoingBtn.classList.add('main--active');
   ongoingContent.classList.add('active');
 });
 
 upcomingBtn.addEventListener('click', (e) => {
   e.preventDefault();
   clearActiveClasses();
-  upcomingBtn.classList.add('mainActive');
+  upcomingBtn.classList.add('main--active');
   upcomingContent.classList.add('active');
 });
 
